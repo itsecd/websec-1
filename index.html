@@ -4,21 +4,19 @@
         <script type="text/javascript" src="script.js"></script>
     </head>
         <body>
-            <div class="raw">
-                <input type="text" id="input1" aria-label="firstNumber" class="inputText dashed">
-                <select id="select1" class="dashed">
-                    <option value="+">+</option>
-                    <option value="-">-</option>
-                    <option value="*">*</option>
-                    <option value="/">/</option>
-                </select>
-                <input type="text" id="input2" aria-label="secondNumber" class="inputText dashed">
+            <div class="wrapper">
+                    <input type="text" id="input1" class="dashed inputText">
+                    <select id="select1" class="dashed inputActive">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>    
+                    <input type="text" id="input2" class="dashed inputText">
             </div>
-
-            <button class="button">egeg </button>
-            <!--button id="button1" onClick="buttonClickHandler();" class="button dashed">
+            <button id="button1" onClick="buttonClickHandler();" class="raw button dashed">
                 Вычислить
-            </button-->
-            <textarea id="results" class="dashed result" ></textarea>
+            </button>
+            <textarea id="results" class="raw dashed result" ></textarea>
         </body>
 </html>

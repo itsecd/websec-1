@@ -1,14 +1,24 @@
-.inputText{
-    margin: 10px 15px 10px 15px;
-    display: inline-block;
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;   
 }
+
+.inputText{
+    width: 40%;
+    margin: 10px 10px 10px 10px;
+}
+
+.inputActive{
+    height: 20px;
+    align-self: center;
+ }
 
 .raw{
     display:block;
 }
 
 .button{
-    margin: 10px auto 10px auto;
+    margin: 5px auto 10px auto;
 }
 
 .result{
@@ -19,7 +29,7 @@
     border-radius: 7px;
     border-color: red;
     border-style: dashed;
-    background-color: lightgreen
+    background-color: lightgreen;
 }
 
 body{
@@ -28,4 +38,5 @@ body{
 
 #select1{
     width: 50px;
+    margin: 0 auto;
 }
