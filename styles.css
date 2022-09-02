@@ -1,0 +1,31 @@
+.inputText{
+    margin: 10px 15px 10px 15px;
+    display: inline-block;
+}
+
+.raw{
+    display:block;
+}
+
+.button{
+    margin: 10px auto 10px auto;
+}
+
+.result{
+    width: 100%;
+}
+
+.dashed{
+    border-radius: 7px;
+    border-color: red;
+    border-style: dashed;
+    background-color: lightgreen
+}
+
+body{
+    background-color: lightgreen;
+}
+
+#select1{
+    width: 50px;
+}
