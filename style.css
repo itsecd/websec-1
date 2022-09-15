@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(167, 234, 167);
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container button, textarea, #input1, #input2, #selection{
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(167, 234, 167);
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.container button {
+    color: red;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.container textarea {
+    width: 300px;
+}
+
+.container__inputs {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.container__inputs #selection {
+    margin: 0 25px;
+    color: red;
+}
