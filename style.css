@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.workplace {
+    height: fit-content;
+    background-color: palegreen;
+
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.elemBase {
+    background-color: transparent;
+    border-color: red;
+    border-style: dashed;
+
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.inputContainer {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.outputBox {
+    height: fit-content;
+    width: auto;
+
+    min-height: 50px;
+
+    padding: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .workplace {
+        width: fit-content;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

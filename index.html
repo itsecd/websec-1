@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Lab1</title>
+</head>
+<body>
+    <div class="workplace">
+        <div class="container">
+            <div class="inputContainer">
+                <div class="firstInput">
+                    <input class="elemBase" id="lhs" type="number"/>
+                </div>
+                <div class="operation">
+                    <select class="elemBase" id="op">
+                        <option>+</option>
+                        <option>-</option>
+                        <option>*</option>
+                        <option>/</option>
+                    </select>
+                </div>
+                <div class="secondInput">
+                    <input class="elemBase" id="rhs" type="number"/>
+                </div>
+            </div>
+            <div class="btnDiv">
+                <button class="elemBase btn" onclick="calculate();">calculate</button>
+            </div>
+            <div class="elemBase outputBox">
+                <output id="result"></output>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
