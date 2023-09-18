@@ -1,0 +1,99 @@
+@import url(./fonts/fonts.css);
+
+body {
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.container {
+  margin-top: 30vh;
+  margin-left: 30vw;
+  min-height: 180px;
+  min-width: 200px;
+  width: 40vw;
+  height: 30vh;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgb(201, 253, 199);
+  font-family: 'Britannic';
+  font-weight: 800;
+}
+
+.input_container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left_post, .right_post {
+  margin-top: 3%;
+  width: 10vw;
+  height: 4vh;
+  min-width: 42px;
+  min-height: 28px;
+  color: rgb(224, 11, 11);
+  border: 2px dashed rgb(224, 11, 11);
+  background: rgb(201, 253, 199);
+  border-radius: 8px;
+}
+
+.selector {
+  margin-top: 3%;
+  width: 6vw;
+  height: 5vh;
+  min-width: 41px;
+  min-height: 20px;
+  color: rgb(224, 11, 11);
+  border: 2px dashed rgb(224, 11, 11);
+  background: rgb(201, 253, 199);
+  border-radius: 5px;
+}
+
+.button {
+  width: 11vw;
+  height: 4vh;
+  min-width: 42px;
+  min-height: 21px;
+  font-size: 1.5vw;
+  margin-left: 37.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(224, 11, 11);
+  border: 2px dashed rgb(224, 11, 11);
+  background: rgb(201, 253, 199);
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  align-content: center;
+}
+
+.button::content {
+  margin-bottom: 10%;
+}
+
+.result_area {
+  width: 25vw;
+  height: 10vh;
+  min-height: 30%;
+  min-width: 30%;
+  margin-left: 19%;
+  display: block;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border: 2px dashed rgb(224, 11, 11);
+  background: rgb(201, 253, 199);
+  border-radius: 8px;
+}
+
+#memory, #memory1 {
+  color: rgba(224, 11, 11, 0.419);
+  margin-top: 10%;
+}
+
+#lastresult {
+  color: rgb(224, 11, 11);
+}
+

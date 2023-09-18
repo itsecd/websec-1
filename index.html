@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <form class="input_container" method="post" action="">
+        <input class="left_post" type="text" id="num1">
+        <p>
+          <select class="selector" name="operations" id="select">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+          </select>
+        </p>
+        <input class="right_post" type="text" id="num2">
+      </form>
+
+      <button type="submit" class="button" value="main_button" onclick="calc()">подсчитать</button>
+
+      <form method="get" action="" class="result_area">
+        <var id="memory1"></var>
+        <var id="memory"></var>
+        <var id="lastresult"></var>
+      </form>
+    </div>
+  </body>
+</html>
+
