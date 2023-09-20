@@ -1,0 +1,23 @@
+.numberUnput{
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+    color: aquamarine;
+    font-size: 20pt;
+    float: left;
+    clear: both;
+}
+
+.operationInput{
+    margin: 20px;
+    width: 60px;
+    height: 40;
+    color: bisque;
+    font-size: 20pt;
+    float: left;
+    clear: both;
+}
+
+.container{
+    clear: both;
+}
