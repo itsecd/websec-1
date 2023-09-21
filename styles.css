@@ -1,0 +1,52 @@
+.inputArea{
+    margin: 5%;
+    width: 30%;
+    height: 20%;
+    font-size: 20pt;
+    float: left;
+    border-radius: 5px;
+    border-style: dashed;
+    border-width: 2px;
+    background-color:lightgreen;
+    border-color: red;
+}
+
+.optionArea{
+    margin: 5%;
+    width: 10%;
+    height: 15%;
+    font-size: 20pt;
+    float: left;
+    border-radius: 5px;
+    border-style: dashed;
+    border-width: 2px;
+    background-color:lightgreen;
+    border-color: red;
+}
+.backgroundArea{
+    display:flex;
+    margin: 5%;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    background-color:lightgreen;
+    border-color: lightgreen;
+}
+.buttonContainer{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.button{
+    width: 10%;
+    height: 15%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: red;
+    background-color:lightgreen;
+}
