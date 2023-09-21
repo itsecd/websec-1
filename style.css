@@ -1,5 +1,6 @@
 .form{
-    width: fit-content;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -8,7 +9,7 @@
 }
 
 .inputs {
-    width: fit-content;
+    width: 100%;
     display: flex; 
     justify-content: center;
     align-items: center; 
@@ -25,15 +26,14 @@
 }
 
 .input{
-    width: 300px;
+    width: 20%;
     margin:10px;
     height: 20px;
     background-color: inherit;
-
 }
 
 .operator {
-    width: 100px;
+    width: 20%;
     margin: 10px;
     height: 26px;
     background-color: inherit;
@@ -42,7 +42,7 @@
 .button {
     margin-top: 20px;
     height: 30px;
-    width: 150px;
+    width: 40%;
     font-size: 15px;
     font-weight: bold;
     background-color: inherit;
@@ -50,31 +50,26 @@
 }
 
 .result {
-    width:500px;
-    height: 250px;
+    width: 70%;
     margin-top: 10px;
-
+    height: 200px;
     display: flex; 
     flex-direction: column;
-
-    max-height: 250px; 
     overflow-y: auto; 
 }
 
-#calculation{
-    margin-left: 10px;
-    margin-top: 50%;
-    font-size: 20px;
-    font-family: Math;
-}
 
-@media (max-width: 770px) {
+@media (max-width: 500px) {
     .form {
+        width: 100%;
         flex-direction: column;
     }
 
     .inputs {
         flex-direction: column;
+    }
+    .input {
+        width: 60%;
     }
 }
 
@@ -84,4 +79,4 @@
     right: 0; 
     top: 0; 
     bottom: 0; 
-} 
+}  
