@@ -1,0 +1,87 @@
+.form{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    background-color: #BAFFC2;
+}
+
+.inputs {
+    width: fit-content;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+    background-color: inherit;
+}
+
+.dot_red_border{
+    border-radius: 10px;
+    border-color: red;
+    border-style: dotted;
+    border-width: 2px;
+    color: red;
+}
+
+.input{
+    width: 300px;
+    margin:10px;
+    height: 20px;
+    background-color: inherit;
+
+}
+
+.operator {
+    width: 100px;
+    margin: 10px;
+    height: 26px;
+    background-color: inherit;
+}
+
+.button {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: inherit;
+    border-radius: 10px;
+}
+
+.result {
+    width:500px;
+    height: 250px;
+    margin-top: 10px;
+
+    display: flex; 
+    flex-direction: column;
+
+    max-height: 250px; 
+    overflow-y: auto; 
+}
+
+#calculation{
+    margin-left: 10px;
+    margin-top: 50%;
+    font-size: 20px;
+    font-family: Math;
+}
+
+@media (max-width: 770px) {
+    .form {
+        flex-direction: column;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+}
+
+.result::-webkit-scrollbar {
+    width: 20px; 
+
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+} 
