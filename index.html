@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script src="script.js" ></script>
         <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
@@ -7,22 +8,26 @@
         <div class="backgroundArea">
             <div>
 
-                <input class = "inputArea" type = "text">
+                <input class = "inputArea" type = "text" id="firstNumber">
 
-                <select class = "optionArea">
+                <select class = "optionArea" id="operation">
                     <option disabled>Выберите операцию</option>
-                    <option value="t1" selected>+</option>
-                    <option value="t2">-</option>
-                    <option value="t3">*</option>
-                    <option value="t4">/</option>
+                    <option value="+" selected>+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
                 </select>
 
-                <input class = "inputArea" type="text">
-
-                <div>
-                    <button class = "button">Посчитать</button>
+                <input class = "inputArea" type="text" id="secondNumber">
+                <div class="buttonContainer">
+                    <button class = "button" onclick="Handler()">Посчитать</button>
                 </div>
-
+                <div class="buttonContainer">
+                    <div class="textAreaContainer">
+                        <textarea style="color: #c8062a; opacity: .3;" disabled class="textArea" id="prevResult"> </textarea>
+                        <textarea disabled class="textArea" id="result"> </textarea> 
+                    </div>
+                </div>
             </div>
         </div>
     </body>
