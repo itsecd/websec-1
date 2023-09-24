@@ -6,6 +6,32 @@
     font-size:20px;
     float:left;
 }
+.container {
+    width: 580px;
+    height: 220px;
+    min-height: 180px;
+    min-width: 200px;
+    display: flex;
+    margin-top: 45px;
+    margin-left: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgb(200, 255, 200);
+    font-family:Arial;
+    font-weight: 800;
+  }
+
+  .first_line, .second_line {
+    /*margin-top: 4%;*/
+    width: 250px;
+    height: 24px;
+    min-width: 60px;
+    min-height: 28px;
+    color: rgb(199, 56, 56);
+    border: 2px dashed rgb(210, 50, 50);
+    background: rgb(200, 255, 200);
+    border-radius: 11px;
+  }
 
 .operationInput{
     margin:10px;

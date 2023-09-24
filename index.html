@@ -1,28 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
 <link rel="stylesheet", href="style.css">
 <script src="main.js"></script>
     </head>
 
 <body>
     <h1>Калькулятор</h1>
-    <div class ='container'></div>
+    <div class ="container">
     <select class="operationInput">
+        
         <option>+</option>
         <option>-</option>
         <option>*</option>
         <option>/</option>
         </select>
-
+        <input class="first_line" type="text" id="num1">
+        <input class="second_line" type="text" id="num2">
         <div class="button">
-        <button class="button">подсчитать</button>
+        <button class="button" onclick="onClickHandler()">подсчитать</button>
         </div>
+
 <div class="inputContainer">
         <textarea >
 
 
         </textarea>
     </div>
+</div>
 </body>
 
     </html>
