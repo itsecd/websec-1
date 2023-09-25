@@ -1,0 +1,99 @@
+body
+{
+    background-color: purple;
+}
+
+
+.inputField 
+{
+    width: 35%;
+    min-width: 150px;
+
+    height: 40px;
+    color: yellow;
+    background-color: purple;
+    margin: 3%;
+    font-size: 15pt;
+    border-width: 2px;
+    border-color: yellow;
+    border-style: dashed;
+
+}
+
+.operationField 
+{
+    width: 10%;
+    min-width: 40px;
+
+    height: 40px;
+    color: yellow;
+    background-color: purple;
+    margin: 3%;
+    font-size: 15pt;
+    border-width: 2px;
+    border-color: yellow;
+    border-style: dashed;
+
+}
+
+.equalButton 
+{
+    width: 10%;
+    min-width: 40px;
+
+    height: 40px;
+    color: yellow;
+    background-color: purple;
+    margin: 3% auto;
+    font-size: 15pt;
+    border-width: 2px;
+    border-color: yellow;
+    border-style: dashed;
+
+}
+
+.outputField 
+{
+    width: 100%;
+    min-width: 150px;
+    
+    height: 40px;
+    color: yellow;
+    background-color: purple;
+    margin: 3%;
+    font-size: 15pt;
+    border-width: 2px;
+    border-color: yellow;
+    border-style: dashed;
+
+}
+
+.inputContainer
+{
+    width: 100%;
+    max-width: 600px;
+}
+.inputContainer::after
+{
+    content: "";
+    clear: both;
+    display: block;
+    align-items: center;
+}
+
+.buttonContainer
+{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+.outputContainer
+{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
