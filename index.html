@@ -6,22 +6,22 @@
     <body>
         <div class="backgroundStyle">
             <div class="divStyle">
-                <input type="text" id="operand_1" class="itemStyle">
-                <select id="operation" class="itemStyle">
+                <input type="text" id="operand_1" class="inputStyle">
+                <select id="operation" class="selectStyle">
                     <option>+</option>
                     <option>-</option>
                     <option>*</option>
                     <option>/</option>
                   </select>
-                <input type="text" id="operand_2" class="itemStyle">
+                <input type="text" id="operand_2" class="inputStyle">
             </div>
             <div class="divStyle">
-                <button class="itemStyle" onclick="onClickHandler()"> посчитать </button>
+                <button class="buttonStyle" onclick="onClickHandler()"> посчитать </button>
             </div>
             <div class="divStyle">
-                <div class="itemStyle">
-                    <textarea id="prev_result" style="color: red; opacity: .4;" class="textareaStyle" readonly ></textarea>
-                    <textarea id="result" class="textareaStyle" readonly color="pink"></textarea>
+                <div class="outputStyle">
+                    <textarea id="prev_result" class="textareaStyle" style="opacity: .4;"  readonly></textarea>
+                    <textarea id="result" class="textareaStyle" readonly></textarea>
                 </div>
             </div>
         </div>
