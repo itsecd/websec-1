@@ -6,19 +6,24 @@
     <body>
         <h1>Калькулятор</h1>
         <div class="backgroundArea">
-            <div>
-
-                <input class = "inputArea" type = "text" id="firstNumber">
-
-                <select class = "optionArea" id="operation">
-                    <option disabled>Выберите операцию</option>
-                    <option value="+" selected>+</option>
-                    <option value="-">-</option>
-                    <option value="*">*</option>
-                    <option value="/">/</option>
-                </select>
-
-                <input class = "inputArea" type="text" id="secondNumber">
+            <div >
+                <div class="inputContainer">
+                    <div class="elemContainer">
+                        <input class = "inputArea" type = "text" id="firstNumber">
+                    </div>
+                    <div class="elemContainer">
+                        <select class = "optionArea" id="operation">
+                            <option disabled>Выберите операцию</option>
+                            <option value="+" selected>+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                        </select>
+                    </div>
+                    <div class="elemContainer">
+                    <input class = "inputArea" type="text" id="secondNumber">
+                    </div>
+                </div>
                 <div class="buttonContainer">
                     <button class = "button" onclick="Handler()">Посчитать</button>
                 </div>

@@ -1,8 +1,26 @@
 function Handler(){
+    document.getElementById("firstNumber").style.backgroundColor='lightgreen';
+    document.getElementById("firstNumber").style.backgroundColor='lightgreen';
     let firstValue=document.getElementById("firstNumber").value;
     let secondValue=document.getElementById("secondNumber").value;
     let operation=document.getElementById("operation").value;
     //сделать проверки и подсвет полей
+    var flag=true;
+    if (isNaN(firstValue))
+    {
+        document.getElementById("firstNumber").style.backgroundColor='green';
+        flag=false;
+    }
+    if (isNaN(secondValue))
+    {
+        document.getElementById("secondNumber").style.backgroundColor='green';
+        flag=false;
+    }
+    if(!flag)
+    {
+        alert('Введите корректное значение');
+        return;
+    }
     firstValue=parseFloat(firstValue);
     secondValue=parseFloat(secondValue);
     let result = null;
