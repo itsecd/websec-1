@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="backgroundStyle">
+            <div class="divStyle">
+                <input type="text" id="operand_1" class="itemStyle">
+                <select id="operation" class="itemStyle">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                  </select>
+                <input type="text" id="operand_2" class="itemStyle">
+            </div>
+            <div class="divStyle">
+                <button class="itemStyle" onclick="onClickHandler()"> посчитать </button>
+            </div>
+            <div class="divStyle">
+                <div class="itemStyle">
+                    <textarea id="prev_result" style="color: red; opacity: .4;" class="textareaStyle" readonly ></textarea>
+                    <textarea id="result" class="textareaStyle" readonly color="pink"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

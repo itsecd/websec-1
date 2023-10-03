@@ -1,0 +1,36 @@
+.backgroundStyle {
+    height: 31%;
+    width: 40%;
+    background-color: darkseagreen;
+}
+
+.divStyle {
+    margin: 1%; 
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.itemStyle {
+    width: 30%;
+    height: 100%;
+    margin: 1%;
+    background-color: darkseagreen;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-style: dotted;
+    border-color: red;
+    color: red;
+    font-weight: bold;
+}
+
+.textareaStyle {
+    width: 99%;
+    height: 10%;
+    background-color: darkseagreen;
+    border-color: darkseagreen;
+    color: red;
+    resize: none;
+}
