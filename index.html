@@ -6,11 +6,13 @@
     <body>
         <h1>Калькулятор</h1>
         <div class="backgroundArea">
-            <div >
+            <div>
                 <div class="inputContainer">
+
                     <div class="elemContainer">
                         <input class = "inputArea" type = "text" id="firstNumber">
                     </div>
+
                     <div class="elemContainer">
                         <select class = "optionArea" id="operation">
                             <option disabled>Выберите операцию</option>
@@ -20,19 +22,24 @@
                             <option value="/">/</option>
                         </select>
                     </div>
+
                     <div class="elemContainer">
-                    <input class = "inputArea" type="text" id="secondNumber">
+                        <input class = "inputArea" type="text" id="secondNumber">
                     </div>
+
                 </div>
+                
                 <div class="buttonContainer">
                     <button class = "button" onclick="Handler()">Посчитать</button>
                 </div>
+
                 <div class="buttonContainer">
                     <div class="textAreaContainer">
                         <textarea style="color: #c8062a; opacity: .3;" disabled class="textArea" id="prevResult"> </textarea>
                         <textarea disabled class="textArea" id="result"> </textarea> 
                     </div>
                 </div>
+
             </div>
         </div>
     </body>
