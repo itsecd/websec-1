@@ -1,10 +1,9 @@
 function Handler(){
     document.getElementById("firstNumber").style.backgroundColor='lightgreen';
-    document.getElementById("firstNumber").style.backgroundColor='lightgreen';
+    document.getElementById("secondNumber").style.backgroundColor='lightgreen';
     let firstValue=document.getElementById("firstNumber").value;
     let secondValue=document.getElementById("secondNumber").value;
     let operation=document.getElementById("operation").value;
-    //сделать проверки и подсвет полей
     var flag=true;
     if (isNaN(firstValue))
     {
@@ -38,6 +37,7 @@ function Handler(){
         case '/':
             if (Math.abs(secondValue)<Number.EPSILON){
                 alert('Нельзя делить на ноль');
+                document.getElementById("secondNumber").style.backgroundColor='green';
                 return;
             }
             else
