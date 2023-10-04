@@ -1,13 +1,22 @@
 const history = [];
 
 function calculate() {
-    const num1 = parseFloat(document.getElementById("num1").value);
-    const num2 = parseFloat(document.getElementById("num2").value);
+    const num1Input = document.getElementById("num1");
+    const num2Input = document.getElementById("num2");
     const operator = document.getElementById("operator").value;
     const resultElement = document.getElementById("result");
     const historyElement = document.getElementById("history");
 
-    if (isNaN(num1) || isNaN(num2)) {
+    const num1Value = num1Input.value;
+    const num2Value = num2Input.value;
+    const num1 = parseFloat(num1Value);
+    const num2 = parseFloat(num2Value);
+
+    const validNumberPattern = /^[0-9]+(\.[0-9]+)?$/;
+
+    if (!validNumberPattern.test(num1Value) || !validNumberPattern.test(num2Value)) {
+        resultElement.textContent = "Error: Input should only contain digits.";
+    } else if (isNaN(num1) || isNaN(num2) || !isFinite(num1) || !isFinite(num2)) {
         resultElement.textContent = "Error: Input correct numbers.";
     } else {
         let result;
@@ -42,7 +51,7 @@ function calculate() {
         resultElement.textContent = result;
         history.unshift(historyText);
 
-        if (history.length > 5) {
+        if (history.length > 1) {
             history.pop();
         }
 
