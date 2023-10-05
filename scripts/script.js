@@ -33,16 +33,12 @@ function execute() {
     addHistory();
     try {
         if (!isNumeric(document.getElementById('first_argument').value) || !isNumeric(document.getElementById('second_argument').value))
-            throw "Invalid input";
+            throw new Error("Invalid input");
 
         let firstArgument = parseInt(document.getElementById('first_argument').value);
         let secondArgument = parseInt(document.getElementById('second_argument').value);
         let operator = document.getElementById('operator');
         let string = '';
-
-        if (isNaN(firstArgument) || isNaN(secondArgument)) {
-            throw "Invalid input";
-        }
 
         if (operator.value == "addition") {
             string = `${firstArgument} + ${secondArgument} = ${firstArgument + secondArgument}`;
@@ -54,6 +50,8 @@ function execute() {
             string = `${firstArgument} * ${secondArgument} = ${firstArgument * secondArgument}`;
         }
         else if (operator.value == "division") {
+            if (secondArgument == 0)
+                throw new Error("Cannot be divided by 0");
             string = `${firstArgument} / ${secondArgument} = ${firstArgument / secondArgument}`;
         }
 
@@ -68,6 +66,6 @@ function execute() {
         addNewElementHistory(string);
     }
     catch (ex) {
-        alert("Invalid input. Please enter valid numbers.");
+        alert(ex.message);
     }
 }
