@@ -1,3 +1,20 @@
+.containerInput {
+  width: 580px;
+  height: 220px;
+  background: rgb(200, 255, 200);
+  text-align: center;
+  font-family:Arial;
+  /*font-weight: 800;*/
+
+  margin-top: 45px;
+  margin-bottom: 45px;
+  margin-left: 100px;
+  margin-right: 100px;
+  min-height: 200px;
+  min-width: 200px;
+
+}
+
 .numberInput{
     margin:20px;
     width:50px;
@@ -6,25 +23,12 @@
     font-size:20px;
     float:left;
 }
-.container {
-    width: 580px;
-    height: 220px;
-    min-height: 180px;
-    min-width: 200px;
-    display: flex;
-    margin-top: 45px;
-    margin-left: 100px;
-    flex-direction: column;
-    justify-content: space-around;
-    background: rgb(200, 255, 200);
-    font-family:Arial;
-    font-weight: 800;
-  }
+
 
   .first_line, .second_line {
-    /*margin-top: 4%;*/
-    width: 250px;
-    height: 24px;
+    margin-top: 2%;
+    width: 220px;
+    height: 30px;
     min-width: 60px;
     min-height: 28px;
     color: rgb(199, 56, 56);
@@ -33,24 +37,50 @@
     border-radius: 11px;
   }
 
-.operationInput{
-    margin:10px;
-    width:10px;
-    height:20px;
-    background-color:cadetblue;
+  .operationInput{
+    width:75px;
+    height:30px;
+    background-color:rgb(200, 255, 200);
     font-size:20px;
+    border: 2px dashed rgb(210, 50, 50);
     /*float:left;*/ 
+    border-radius: 11px;
 }
 
-.container{
+  .button{
+    margin:10px;
+    width:200px;
+    height:30px;
+    background-color: rgb(200, 255, 200);
+    font-size: 15pt;
+    border-width: 2px;
+    color: rgb(199, 56, 56);
+    border: 2px dashed rgb(210, 50, 50);;
+    border-radius: 11px;
+  }
+
+
+
+.containerOutput{
     clear:right;
 }
-.buttonContainer{
+/*.buttonContainer{
     display: flex;
      justify-content:center;
      align-items:center;
-}
+     width: 100%;
+     max-width: 600px;
+}*/
 
-.inputContainer{
-    
+
+
+.OutputWindow{
+  width: 560px;
+  height: 94px;
+  min-width: 60px;
+  min-height: 28px;
+  color: rgb(199, 56, 56);
+  border: 2px dashed rgb(210, 50, 50);
+  background: rgb(200, 255, 200);
+  border-radius: 11px;
 }

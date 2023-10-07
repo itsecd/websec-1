@@ -10,27 +10,29 @@
 
 <body>
     <h1>Калькулятор</h1>
-    <div class ="container">
-    <select class="operationInput">
+    <div class ="containerInput">
+        <input class="first_line" type="text" id="num1">
+    <select id="operation" class="operationInput">
         
         <option>+</option>
         <option>-</option>
         <option>*</option>
         <option>/</option>
         </select>
-        <input class="first_line" type="text" id="num1">
         <input class="second_line" type="text" id="num2">
-        <div class="button">
-        <button class="button" onclick="onClickHandler()">подсчитать</button>
+ 
+      <!--  <div class="buttonContainer">-->
+        <button id="button" class="button" onclick="onClickHandler()">подсчитать</button>
+   
+        <div class ="OutputWindow">
+        <span class="resultField", id="resultField">x</span>
+        <var>PrevRes</var>
+        <var>LastRes</var>
         </div>
+        <!--Previos field-->
 
-<div class="inputContainer">
-        <textarea >
-
-
-        </textarea>
-    </div>
 </div>
+
 </body>
 
     </html>
