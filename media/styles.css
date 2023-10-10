@@ -1,67 +1,47 @@
-.textInput {
-
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 6px;
-    border: red dashed 1px;
-    font-size: 20px;
-    color: red;
-    width: 200px;
-    height: 40px;
+.background {
+    background-color: rgb(186, 255, 194);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 650px;
+    height: auto;
 }
 
-.selectInput {
-
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 6px;
-    border: red dashed 1px;
-    font-size: 20px;
-    color: red;
-    width: 60px;
-    height: 40px;
+.defaultContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.buttonItem {
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 6px;
+.defaultStyle {
+    margin: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
     border: red dashed 1px;
     font-size: 20px;
     color: red;
-    width: 200px;
-    height: 40px;
+    background: transparent;
+}
+
+.valueInput {   
+    width: 250px;
+    height: 35px;
+}
+
+.operationSelect {
+    width: 70px;
+    height: 35px;
 }
 
 .textArea {
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 6px;
-    border: red dashed 1px;
-    font-size: 20px;
-    color: red;
-    width: 550px;
+    width: 100%;
     height: 100px;
+    resize: none;
+    padding: 2%;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.itemInRow {
-    float: left;
-}
-
-.boxForButton {
-    display: flex;
-    width: 600px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+.buttonItem {
+    width: 200px;
+    height: 40px;
 }

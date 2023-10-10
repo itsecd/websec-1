@@ -1,36 +1,37 @@
 function buttonClick() {
 
-    let v1 = document.getElementById("field1").value;
-    let v2 = document.getElementById("field2").value;
-    let op = document.getElementById("operation").value;
+    let value1 = document.getElementById("field1").value;
+    let value2 = document.getElementById("field2").value;
+    let operation = document.getElementById("operation").value;
 
-    v1 = parseFloat(v1);
-    v2 = parseFloat(v2);
+    value1 = parseFloat(value1);
+    value2 = parseFloat(value2);
 
     let result = "";
+    let previousResult = document.getElementById("result").value;
 
-    if (op === "+") {
-        result = v1 + v2;
+    switch (operation) {
+        case "+":
+            result = value1 + value2;
+            break;
+        case "-":
+            result = value1 - value2;
+            break;
+        case "*":
+            result = value1 * value2;
+            break;
+        case "/":
+            if (Math.abs(value2 - 0) < Number.EPSILON) {
+                alert("На ноль делить нельзя! Измените операцию или второе число.");
+                return;
+            }
+            else {
+                result = value1 / value2;
+            }
+            break;
     }
 
-    if (op === "-") {
-        result = v1 - v2;
-    }
+    result = value1 + " " + operation + " " + value2 + " = " + result + "\n";
 
-    if (op === "*") {
-        result = v1 * v2;
-    }
-
-    if (op === "/") {
-        if (Math.abs(v2 - 0) < Number.EPSILON) {
-            result = "not on my watch bitch"
-        }
-        else {
-            result = v1 / v2;
-        }
-    }
-
-    document.getElementById("result").value = result;
-
-    console.log("buttonClick", v1, v2, op, typeof v1, typeof v2);
+    document.getElementById("result").value = result + previousResult;
 }

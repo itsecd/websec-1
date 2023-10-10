@@ -6,28 +6,24 @@
 </head>
 
 <body>
-
-    <div class="clearfix">
-
-        <input type="text" id="field1" class="textInput" />
-
-        <select class="selectInput" id="operation">
-            <option>+</option>
-            <option>-</option>
-            <option>*</option>
-            <option>/</option>
-        </select>
-
-        <input type="text" id="field2" class="textInput" />
-
+    <div class="background">
+        <div class="defaultContainer">
+            <input type="text" id="field1" class="valueInput defaultStyle" />
+            <select id="operation" class="operationSelect defaultStyle">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="text" id="field2" class="valueInput defaultStyle" />
+        </div>
+        <div class="defaultContainer">
+            <button class="buttonItem defaultStyle" onClick="buttonClick()">подсчитать</button>
+        </div>
+        <div class="defaultContainer">
+            <textarea class="textArea defaultStyle" id="result" readonly></textarea>
+        </div>
     </div>
-
-    <div class="boxForButton">
-        <button class="buttonItem" onClick="buttonClick()">e x e c u t e</button>
-    </div>
-
-    <textarea class="textArea" id="result"></textarea>
-
 </body>
 
 </html>
