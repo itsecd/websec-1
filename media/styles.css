@@ -1,0 +1,67 @@
+.textInput {
+
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+    border: red dashed 1px;
+    font-size: 20px;
+    color: red;
+    width: 200px;
+    height: 40px;
+}
+
+.selectInput {
+
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+    border: red dashed 1px;
+    font-size: 20px;
+    color: red;
+    width: 60px;
+    height: 40px;
+}
+
+.buttonItem {
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+    border: red dashed 1px;
+    font-size: 20px;
+    color: red;
+    width: 200px;
+    height: 40px;
+}
+
+.textArea {
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+    border: red dashed 1px;
+    font-size: 20px;
+    color: red;
+    width: 550px;
+    height: 100px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.itemInRow {
+    float: left;
+}
+
+.boxForButton {
+    display: flex;
+    width: 600px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
