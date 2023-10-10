@@ -13,21 +13,18 @@
     <h1>Calculator</h1>
     <div class = "main_box">
         <div class = "input_box">
-            <input type="text" id="value1">
-            <select id="selectOperations">
-                <option>+</option>
-                <option>-</option>
-                <option>/</option>
-                <option>*</option>
-                <option>^</option>
+            <input type="number" id="value1" placeholder="0" class = "general_design" step="any">
+            <select id="selectOperations" class = "general_design">
+                <option class = "general_design">+</option>
+                <option class = "general_design">-</option>
+                <option class = "general_design">/</option>
+                <option class = "general_design">*</option>
+                <option class = "general_design">^</option>
             </select>
-            <input type="text" id="value2">
+            <input type="number" id="value2" placeholder="0" class = "general_design" step="any">
         </div>
-
-        
-        <button type="submit" class="calculate_button" value="main_button" onclick="calculate()">calculate</button>
-
-        <div method="get" action="" class="result_area">
+        <button type="number" class="calculate_button general_design" value="main_button" onclick="calculate()">calculate</button>
+        <div class="result_area general_design">
             <var id="memory"></var>
             <var id="lastresult"></var>
         </div>
