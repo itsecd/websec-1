@@ -1,6 +1,6 @@
 function Handler(){
-    document.getElementById("firstNumber").style.backgroundColor='lightgreen';
-    document.getElementById("secondNumber").style.backgroundColor='lightgreen';
+    document.getElementById("firstNumber").style.backgroundColor='hsl(127, 100%, 86%)';
+    document.getElementById("secondNumber").style.backgroundColor='hsl(127, 100%, 86%)';
     let firstValue=document.getElementById("firstNumber").value;
     let secondValue=document.getElementById("secondNumber").value;
     let operation=document.getElementById("operation").value;
@@ -47,5 +47,6 @@ function Handler(){
             break;
     }
     document.getElementById('prevResult').value=document.getElementById('result').value;
+    document.getElementById('prevResult').style.opacity='0.5';
     document.getElementById('result').value=firstValue+operation+secondValue+'='+result;
 }

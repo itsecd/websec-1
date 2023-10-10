@@ -7,14 +7,14 @@
         <h1>Калькулятор</h1>
         <div class="backgroundArea">
             <div>
-                <div class="inputContainer">
+                <div class="inputContainer ">
 
-                    <div class="elemContainer">
-                        <input class = "inputArea" type = "text" id="firstNumber">
+                    <div class="elemContainer centerMode">
+                        <input class = "inputArea dashedRedBorder" type = "text" id="firstNumber">
                     </div>
 
-                    <div class="elemContainer">
-                        <select class = "optionArea" id="operation">
+                    <div class="elemContainer centerMode">
+                        <select class = "optionArea dashedRedBorder" id="operation">
                             <option disabled>Выберите операцию</option>
                             <option value="+" selected>+</option>
                             <option value="-">-</option>
@@ -23,20 +23,20 @@
                         </select>
                     </div>
 
-                    <div class="elemContainer">
-                        <input class = "inputArea" type="text" id="secondNumber">
+                    <div class="elemContainer centerMode">
+                        <input class = "inputArea dashedRedBorder" type="text" id="secondNumber">
                     </div>
 
                 </div>
                 
-                <div class="buttonContainer">
-                    <button class = "button" onclick="Handler()">Посчитать</button>
+                <div class="elemContainer centerMode">
+                    <button class = "button dashedRedBorder centerMode" onclick="Handler()">Посчитать</button>
                 </div>
 
-                <div class="buttonContainer">
-                    <div class="textAreaContainer">
-                        <textarea style="color: #c8062a; opacity: .3;" disabled class="textArea" id="prevResult"> </textarea>
-                        <textarea disabled class="textArea" id="result"> </textarea> 
+                <div class="elemContainer centerMode">
+                    <div class="textAreaContainer dashedRedBorder">
+                        <textarea disabled class="textArea centerMode" id="prevResult"> </textarea>
+                        <textarea disabled class="textArea centerMode" id="result"> </textarea> 
                     </div>
                 </div>
 
