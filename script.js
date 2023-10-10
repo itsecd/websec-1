@@ -2,8 +2,8 @@ let prev_calculation = ''
 let output = '';
 
 function onClickHandler() {
-    document.getElementById("operand_1").style.backgroundColor="darkseagreen";
-    document.getElementById("operand_2").style.backgroundColor="darkseagreen";
+    document.getElementById("operand_1").style.backgroundColor="rgb(186,255,200)";
+    document.getElementById("operand_2").style.backgroundColor="rgb(186,255,200)";
     let value_1 = document.getElementById("operand_1").value;
     let value_2 = document.getElementById("operand_2").value;
     let operation = document.getElementById("operation").value;
@@ -13,13 +13,13 @@ function onClickHandler() {
     let result = null;
 
     if (isNaN(value_1)) {
-        document.getElementById("operand_1").style.backgroundColor="darkolivegreen";
+        document.getElementById("operand_1").style.backgroundColor="rgb(186,255,200)";
         document.getElementById("prev_result").value = output;
         document.getElementById("result").value = "В первом окне не число";
         return;
     }
     if (isNaN(value_2)) {
-        document.getElementById("operand_2").style.backgroundColor="darkolivegreen";
+        document.getElementById("operand_2").style.backgroundColor="rgb(186,255,200)";
         document.getElementById("prev_result").value = output;
         document.getElementById("result").value = "Во втором окне не число";
         return;
@@ -38,7 +38,7 @@ function onClickHandler() {
             break;
         case '/':
             if (Math.abs(value_2) < Number.EPSILON) {
-                document.getElementById("operand_2").style.backgroundColor="darkolivegreen";
+                document.getElementById("operand_2").style.backgroundColor="rgb(186,255,200)";
                 document.getElementById("prev_result").value = output;
                 document.getElementById("result").value = "На ноль делить нельзя";
                 return;
@@ -53,5 +53,4 @@ function onClickHandler() {
     output = output.concat(value_1, ' ', operation, ' ', value_2, ' = ', result);
     document.getElementById("result").value = output;
     document.getElementById("prev_result").value = prev_calculation;
-    var original = textarea.textContent;
 }

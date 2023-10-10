@@ -1,5 +1,5 @@
 .backgroundStyle {
-    background-color: darkseagreen;
+    background-color: rgb(186,255,200);
     border-radius: 7px;
     width: 500px;
     height: 189px;
@@ -12,13 +12,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: darkseagreen;
+    background-color: rgb(186,255,200);
 }
 
-.inputStyle, .selectStyle, .buttonStyle, .outputStyle, .textareaStyle {
-    font-family: 'Times New Roman', Times, serif; 
-    font-size: large; 
-    background-color: darkseagreen;
+.inputStyle, .selectStyle, .buttonStyle, .outputStyle, .textareaLastOutputStyle,  .textareaPreviousOutputStyle{
+    font-family: 'Verdana', Times, sans-serif; 
+    font-size: small; 
+    background-color: rgb(186,255,200);
     color: red;
 }
 
@@ -34,23 +34,29 @@
 
 .inputStyle {
     width: 30%;
+    padding: 6px;
 }
 
 .selectStyle {
     width: 20%;
+    padding: 3px;
 }
 
 .buttonStyle{
     width: 25%;
+    padding: 6px;
 }
 
-.textareaStyle { 
+.textareaLastOutputStyle, .textareaPreviousOutputStyle { 
     width: 99%;
     height: 5%;
-    border-color: darkseagreen;
+    border-color: rgb(186,255,200);
     resize: none;
     text-align: center;
-    
+}
+
+.textareaPreviousOutputStyle {
+    opacity: .4;
 }
 
 .outputStyle {
