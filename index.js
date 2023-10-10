@@ -8,17 +8,17 @@ function calc() {
 
   let num1 = document.getElementById("num1").value;
   let num2 = document.getElementById("num2").value;
-  let result = document.getElementById("lastresult").value;
+  let result;
 
   if(isNaN(num1))
   {
-    num2.onclick = error("First field");
+    error("First field");
     document.getElementById("num1").focus();
     return
   }
   if(isNaN(num2))
   {
-    num2.onclick = error("Second field");
+    error("Second field");
     document.getElementById("num2").focus();
     return
   }
@@ -34,7 +34,7 @@ function calc() {
           result = parseFloat(num1) * parseFloat(num2);
           break;
       case '/':
-          if (parseFloat(num2) != 0)
+          if (Math.abs(num2 - 0) > Number.EPSILON)
               result = parseFloat(num1) / parseFloat(num2);
           else
               result = "Division by zero";
