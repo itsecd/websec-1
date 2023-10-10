@@ -1,3 +1,24 @@
+.general_design{
+    background-color: transparent;
+    color:#e75742;
+    border-color: #e75742;
+    border-width: 2px;
+    border-style: dashed;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input::placeholder{
+    color: rgb(209, 166, 126)
+}
+
 .main_box {
     background-color: rgb(186, 255, 194);
     border-radius: 8px;
@@ -16,34 +37,15 @@
 }
 
 input {
-    background-color: transparent;
-    color:#e75742;
-    border-color: #e75742;
-    border-width: 2px;
-    border-style: dashed;
-    border-radius: 8px;
     width: 245px;
-    height: 45px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: large;
     padding: 15px;
 }
 
 select{
-    background-color: transparent;
-    border-color: #e75742;
-    color: #e75742;
-    border-width: 2px;
-    border-style: dashed;
-    border-radius: 8px;
     width: 62px;
     height: 97%;
     margin-right: 3.32%;
     margin-left: 3.32%;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: large;
     padding: 5px;
 }
 
@@ -53,40 +55,16 @@ select{
     margin-left: 33.5%;
     margin-left: 33.5%;
     margin-bottom: 5%;
-    background-color: transparent;
-    color: #e75742;
-    border-color: #e75742;
-    border-width: 2px;
-    border-style: dashed;
-    border-radius: 8px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: large;
     justify-content: space-around;
 }
 
 .result_area{
-    background-color: transparent;
-    border-color: #e75742;
-    color: #e75742;
-    border-width: 2px;
-    border-style: dashed;
-    border-radius: 8px;
     width: 92.5%;
     height: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: large;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-option{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: large;
 }
 
 var#memory{
