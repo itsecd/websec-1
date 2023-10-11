@@ -12,11 +12,8 @@ function calculate() {
     const num1 = parseFloat(num1Value);
     const num2 = parseFloat(num2Value);
 
-    const validNumberPattern = /^[0-9]+(\.[0-9]+)?$/;
 
-    if (!validNumberPattern.test(num1Value) || !validNumberPattern.test(num2Value)) {
-        resultElement.textContent = "Error: Input should only contain digits.";
-    } else if (isNaN(num1) || isNaN(num2) || !isFinite(num1) || !isFinite(num2)) {
+    if (isNaN(num1) || isNaN(num2) || !isFinite(num1) || !isFinite(num2)) {
         resultElement.textContent = "Error: Input correct numbers.";
     } else {
         let result;

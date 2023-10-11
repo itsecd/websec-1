@@ -1,48 +1,32 @@
-.textinput {
+.sharedinput{
     margin: 20px;
     padding-left: 6px;
     padding-right: 6px;
-    border-radius: 6px;
-    border: red dashed 2px;
+    border-radius: 12px;
     font-size: 20px;
     color: red;
-    width: 200px;
     height: 30px;
+    border: red dashed 2px;
+}
+.textinput {
+    flex-wrap: wrap;
+    width: 200px;
+    background-color:lightgreen;
 }
 
 .selectinput {
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 12px;
-    border: red dashed 2px;
-    font-size: 20px;
-    color: red;
+    background-color:lightgreen;
     width: 60px;
-    height: 30px;
 }
 
 .buttonItem {
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 12px;
-    border: red dashed 2px;
-    font-size: 20px;
-    color: red;
     width: 200px;
     height: 60px;
 }
 
 .textArea {
     text-align: center;
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 12px;
-    border: red dashed 2px;
     font-size: 15px;
-    color: red;
     width: 600px;
     height: 100px;
 }

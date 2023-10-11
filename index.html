@@ -12,18 +12,18 @@
 <div class="background" >
     <div>
         <div class="clearfix">
-            <input type="text" id="num1" class="textinput" style="background-color:lightgreen;" onblur="validateInput(this)">
-            <select id="operator" class="selectinput" style="background-color:lightgreen;   flex-wrap: wrap;">
+            <input type="text" id="num1" class="textinput sharedinput" onblur="validateInput(this)">
+            <select id="operator" class="selectinput sharedinput">
                 <option value="+">+</option>
                 <option value="-">-</option>
                 <option value="*">*</option>
                 <option value="/">/</option>
             </select>
-            <input type="text" id="num2" class="textinput" style="background-color:lightgreen;" onblur="validateInput(this)">
+            <input type="text" id="num2" class="textinput sharedinput" onblur="validateInput(this)">
         </div>
         <div>
-            <button onclick="calculate()" class="buttonItem my-button">Подсчитать</button>
-            <div class="textArea">
+            <button onclick="calculate()" class="buttonItem my-button sharedinput">Подсчитать</button>
+            <div class="textArea sharedinput">
                 <p>Result: <span id="result">0</span></p>
                 <p>Previous operations:</p>
                 <div id="history"></div>
