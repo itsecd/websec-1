@@ -2,12 +2,12 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
-    <script href="script.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
     <h1>Калькулятор</h1>
-    <div class="container">
+    <div class="inputsContainer clearfix">
         <input type="text" id="number1" class="numberInput" />
         <select class="operatonInput" id="operation">
             <option>+</option>
@@ -16,10 +16,12 @@
             <option>/</option>
         </select>
         <input type="text" id="number2" class="numberInput" />
-        <button onClick="OnClickHandler()">Подсчитать</button>
-        <textarea></textarea>
     </div>
-
+    <div class="buttonContainer">
+        <button class="button" onclick="OnClickHandler()">Подсчитать</button>
+    </div>
+    <div class="inputsContainer">
+        <textarea class="textareaInput" id="result"></textarea>
+    </div>
 </body>
-
 </html>

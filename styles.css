@@ -2,18 +2,54 @@
     margin: 20px;
     width: 200px;
     height: 40px;
-    background-color: blue;
+    background-color: rgb(139, 139, 245);
     float: left;
+    font-size: 20pt;
 }
 
 .operationInput {
     margin: 20px;
     width: 60px;
     height: 40px;
-    background-color: blueviolet;
-    float: center;
+    background-color: rgb(194, 141, 243);
+    float: left;
+    font-size: 20pt;
 }
 
-.container {
+.button {
+    float: left;
+    width: 200px;
+    height: 40px;
+    font-size: 20pt;
+}
+
+.inputsContainer{
+    width: 600px;
+}
+
+.textareaInput{
+    width: 100%;
+    height: 100px;
+}
+
+.buttonContainer{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearfix{
+    zoom:1;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
     clear: both;
 }
