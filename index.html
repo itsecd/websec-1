@@ -1,28 +1,30 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="media/styles.css">
-    <script src="media/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <div class="background">
-        <div class="defaultContainer">
-            <input type="text" id="field1" class="valueInput defaultStyle" />
-            <select id="operation" class="operationSelect defaultStyle">
+    <div class="main-container">
+        <div class="main-container__row">
+            <input type="text" class="main-container__element input" id="field1" />
+            <select class="main-container__element select" id="operation">
                 <option>+</option>
                 <option>-</option>
                 <option>*</option>
                 <option>/</option>
             </select>
-            <input type="text" id="field2" class="valueInput defaultStyle" />
+            <input type="text" class="main-container__element input" id="field2" />
         </div>
-        <div class="defaultContainer">
-            <button class="buttonItem defaultStyle" onClick="buttonClick()">подсчитать</button>
+        <div class="main-container__row">
+            <button class="main-container__element button" onClick="buttonClick()">подсчитать</button>
         </div>
-        <div class="defaultContainer defaultStyle">
-            <textarea class="textArea" id="result" readonly disabled></textarea>
-            <textarea class="textArea previousResultStyle" id="previousResult" readonly disabled></textarea>
+        <div class="main-container__row">
+            <div class="main-container__element main-container__element_wide">
+                <textarea class="result" id="result" disabled></textarea>
+                <textarea class="result previous-result" id="previousResult" disabled></textarea>
+            </div>
         </div>
     </div>
 </body>
