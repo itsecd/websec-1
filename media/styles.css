@@ -1,0 +1,15 @@
+.inputField {
+    width: 200px;
+    height: 400px; 
+    background-color: aquamarine;
+    margin: 20px; 
+    font-size: 20pt;
+}
+    
+.operationField {
+    width: 60px;
+    height: 40px;
+    background-color: aquamarine;
+    margin: 20px;
+    font-size: 20pt;
+}
