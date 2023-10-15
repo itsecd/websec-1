@@ -1,43 +1,33 @@
-function err(str)
-{
-    alert(str + " is not a number")
-}
-
 function onClickHandler(event){
-    let v1 = document.getElementById("num1").value;
-    let v2 = document.getElementById("num2").value;
-    let op = document.getElementById("operation").value;
-    let res = document.getElementById("resultField");
+    var v1 = document.getElementById("num1").value;
+    var v2 = document.getElementById("num2").value;
+    var op = document.getElementById("operation").value;
 
-
-  if(isNaN(num1)||isNaN(num2))
-  { 
-    res.textContext = "Incorrect numbers"
-  }
-  else{
-    let resultField;
-    //previos nums
-  }
+var resultOut='';
 
   switch (op) {
       case '+':
-          result = parseFloat(num1) + parseFloat(num2);
-          //prev...
+        resultOut = parseFloat(v1) + parseFloat(v2);
           break;
       case '-':
-          result = parseFloat(num1) - parseFloat(num2);
+        resultOut = parseFloat(v1) - parseFloat(v2);
           break;
       case '*':
-          result = parseFloat(num1) * parseFloat(num2);
+        resultOut = parseFloat(v1) * parseFloat(v2);
           break;
       case '/':
-          if (parseFloat(num2) != 0)
-              result = parseFloat(num1) / parseFloat(num2);
+          if (parseFloat(v2) != 0)
+          resultOut = parseFloat(v1) / parseFloat(v2);
           else
-              result = "Division by zero";
+          resultOut = "Division by zero";
           break;
   }
-  if (!isNaN(result))
-      result = num1 + " " + selectedElement.value + " " + num2 + " " + "=" + " " + result;
+  resultOut = v1 + " " + op + " " + v2 + " " + "=" + " " + resultOut;
+
+  document.getElementById('resultOp').innerHTML = document.getElementById('resultFin').innerHTML;
+  document.getElementById('resultFin').style.opacity='0.5'; 
+  document.getElementById('resultFin').innerHTML = document.getElementById('lastR').innerHTML; 
+  document.getElementById('resultOp').style.opacity='0.5'; 
+  document.getElementById('lastR').innerHTML = resultOut;
 
 }

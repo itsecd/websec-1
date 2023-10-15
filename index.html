@@ -3,33 +3,29 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet", href="style.css">
 <script src="main.js"></script>
     </head>
 
 <body>
-    <h1>Калькулятор</h1>
     <div class ="containerInput">
-        <input class="first_line" type="text" id="num1">
+        <input class="first_line" type="number" id="num1">
     <select id="operation" class="operationInput">
-        
         <option>+</option>
         <option>-</option>
         <option>*</option>
         <option>/</option>
         </select>
-        <input class="second_line" type="text" id="num2">
+        <input class="second_line" type="number" id="num2">
  
-      <!--  <div class="buttonContainer">-->
         <button id="button" class="button" onclick="onClickHandler()">подсчитать</button>
-   
-        <div class ="OutputWindow">
-        <span class="resultField", id="resultField">x</span>
-        <var>PrevRes</var>
-        <var>LastRes</var>
+
+       <div class="resultAR">
+        <var class="m_resultOp" id="resultOp"></var>
+        <var class="m_resultFin" id="resultFin"></var>
+        <var class="m_lastR" id="lastR"></var>
         </div>
-        <!--Previos field-->
 
 </div>
 
