@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/calculator.css">
+        <script src="scripts/calculator.js"></script>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="block">
+                <input class="baseElement inputField" id="firstArg">
+            <select class="baseElement operation" id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            
+            <input class="baseElement inputField" id="secondArg">
+            </div>
+            
+            <div class="block">
+                <button class="baseElement button" onclick="calculate()">подсчитать</button>
+            </div>
+            <div class="block">
+                <div class="historyContainer">
+                    <ul id="ulHistory">
+                    </ul>
+                    <div class="result" id="result">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

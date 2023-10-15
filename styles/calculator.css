@@ -1,0 +1,54 @@
+.mainContainer{
+    background-color: #baffc2;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.block{
+    width: 100%;
+    text-align: center;
+}
+
+.baseElement{
+    background-color: inherit;
+    border: 1px dashed red;
+    border-radius: 6px;
+    color: red;
+    margin: 3px;
+    font-size: 16px;
+}
+
+.inputField{
+    width: 200px;
+}
+
+.button{
+    margin: 15px;
+    padding: 5px;
+}
+
+.historyContainer{
+    background-color: inherit;
+    border: 1px dashed red;
+    border-radius: 6px;
+    font-size: 16px;
+    color: red;
+    text-align: left;
+    font-size: 16px;
+}
+
+.historyElem{
+    color: rgba(255, 0, 0, 50%);
+    list-style: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
