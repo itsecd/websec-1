@@ -1,27 +1,28 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 
 <body>
-    <h1>Калькулятор</h1>
-    <div class="inputsContainer clearfix">
-        <input type="text" id="number1" class="numberInput" />
-        <select class="operatonInput" id="operation">
-            <option>+</option>
-            <option>-</option>
-            <option>*</option>
-            <option>/</option>
-        </select>
-        <input type="text" id="number2" class="numberInput" />
-    </div>
-    <div class="buttonContainer">
-        <button class="button" onclick="OnClickHandler()">Подсчитать</button>
-    </div>
-    <div class="inputsContainer">
-        <textarea class="textareaInput" id="result"></textarea>
+    <div class="background">
+        <div class="block">
+                <input type="text" id="number1" class="numberInput style" />
+                    <select class="operatonInput style" id="operation">
+                        <option>+</option>
+                        <option>-</option>
+                        <option>*</option>
+                        <option>/</option>
+                    </select>
+                <input type="text" id="number2" class="numberInput style" />
+            <div class="block">
+                <button class="button style" onclick="OnClickHandler()">Подсчитать</button>
+            </div>
+            <div class="block style">
+                    <textarea disabled class="textareaOutput prevResult style" id="prevResult" readonly> </textarea>
+                    <textarea disabled class="textareaOutput style" id="result" readonly> </textarea> 
+            </div>
+        </div> 
     </div>
 </body>
 </html>
