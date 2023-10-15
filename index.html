@@ -1,20 +1,34 @@
-<!DOCTYPE html> 
 <html> 
+
 <head>
     <link rel="stylesheet" href="media/styles.css">
+    <title>Калькулятор</title>
+    <script src="media/script.js"></script>
 </head> 
-<body> 
-    <input type="text" class="inputField"/>
-    <select>
-        <option>+</option> 
-        <option>-</option>
-        <option>*<option>
-        <option>/</option>
-    </select>
 
-    <input type="text" class="inputField"/>
-    <button>Вычислить</button>
-    <textarea></textarea> 
+<body> 
+    <div class="container">
+        <input type="text" id="number1" class="inputField"/>
+
+        <select class="operationField" id="operation">
+            <option>+</option> 
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+
+        <input type="text" id="number2" class="inputField" />
+    
+        <div class="buttonContainer">
+            <button class="button" onClick="onButtonClick()">подсчитать</button>
+        </div>
+        
+        <div class="resultField" id="output">
+            
+            <span id="previous-operation" class="previous-operation"></span><br>
+            <span id="current-operation" class="current-operation"></span>
+        </div>
+    </div>
 </body>
 
 </html>
