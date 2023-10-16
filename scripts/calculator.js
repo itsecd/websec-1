@@ -21,12 +21,11 @@ function calculate(){
         document.getElementById("result").textContent = resultField;
     }
     else{
-        if (!Number.isFinite(calcResult)){
-            alert("Выберите числа с меньшим числом символов!");
-            return;
+        if (Number.isNaN(calcResult)){
+            alert("Происходит деление на 0!");
         }
         else{
-            alert("Происходит делени на 0!");
+            alert("Выберите числа с меньшим числом символов!");
             return;
         }
     }
@@ -41,7 +40,7 @@ function calc(lhs, rhs, operator){
         case '*':
             return lhs * rhs;
         case '/':
-            if (rhs === 0){
+            if (Math.abs(rhs) < Number.EPSILON){
                 return NaN;
             }
             else{
