@@ -12,6 +12,7 @@ function calculate(){
 
     if (isNaN(lhs) || isNaN(rhs)){
         alert("Введите числа в поля ввода!");
+        return;
     }
     calcResult = calc(lhs, rhs, operator);
     if (Number.isFinite(calcResult) && !Number.isNaN(calcResult)){
@@ -22,9 +23,11 @@ function calculate(){
     else{
         if (!Number.isFinite(calcResult)){
             alert("Выберите числа с меньшим числом символов!");
+            return;
         }
         else{
             alert("Происходит делени на 0!");
+            return;
         }
     }
 }
@@ -45,7 +48,7 @@ function calc(lhs, rhs, operator){
                 return lhs / rhs;
             }
         default:
-            alert("Недопустимая операция!")
+            alert("Недопустимая операция!");
     }
 }
 
