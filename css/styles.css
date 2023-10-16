@@ -41,7 +41,7 @@
     height: 40px;
 }
 
-.result {
+.main-container__element textarea{
     width: 100%;
     height: 30px;
     resize: none;
@@ -51,6 +51,6 @@
     color: red;
 }
 
-.previous-result {
+.main-container__element textarea:last-child{
     opacity: 0.5;
 }
