@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="media/styles.css">
+    <script src="media/script.js"></script>
+</head>
+
+<body>
+    <h1 class="title">Калькулятор</h1>
+
+    <div class="mainContainer">
+        <div class="flexContainer ">
+            <input type="text" id="number1" class="numberInput totalView" />
+
+            <select id="operation" class="operationInput totalView">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            
+            <input type="text" id="number2" class="numberInput totalView" />
+        </div>
+
+        <div class="flexContainer">
+            <button class="button totalView" onclick="onClickHandler()">подсчитать</button>
+        </div>
+
+        <div class="resultContainer totalView">
+            <textarea id="prevResults" class="resultTextArea prevResults" readonly></textarea>
+            <textarea id="result" class="resultTextArea result" readonly></textarea>
+        </div>
+    </div>
+
+</body>
+
+</html>

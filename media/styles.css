@@ -1,0 +1,93 @@
+.title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.mainContainer {
+    margin: 5%;
+    padding: 2%;
+    background-color: rgb(204, 252, 197);
+
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalView {
+    background-color: rgb(204, 252, 197);
+    border: 1px dashed;
+    border-color: rgb(228, 60, 26);
+    border-radius: 10px;
+    color: rgb(228, 60, 26);
+    font-size: 15px;
+}
+
+.numberInput {
+    width: 30%;
+    text-align: left;
+    margin: 10px;
+    padding: 5px;
+}
+
+.operationInput {
+    width: 10%;
+    text-align: center;
+    padding: 5px;
+}
+
+.button {
+    width: 35%;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    
+}
+
+.resultTextArea {
+    text-align: left;
+    margin: 0px 10px;
+    padding: 10px;
+    width: 90%;
+    resize: none;
+
+    background: none;
+    border: none;
+    overflow: hidden;
+}
+
+.prevResults {
+    height: 80;
+    opacity: 0.5;
+    color: rgb(228, 60, 26);
+    font-size: 15px;
+}
+
+.result {
+    height: 50;
+    color: rgb(228, 60, 26);
+    font-size: 15px;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width: 500px) {
+    .numberInput {
+        width: 70%;
+    }
+    .flexContainer{
+        flex-direction: column;
+    }    
+}
