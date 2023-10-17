@@ -2,28 +2,33 @@
 
 <head>
     <link rel="stylesheet" href="media/style.css">
-    <script src="media/script.js"></script>
+    <script src="media/index.js"></script>
+    <title>websec-1</title>
 </head>
 
 <body>
+    <div class="background">
+        <div class="container">
+            <input type="text" id="field1" class="textInput" />
+            <select class="selectInput" id="operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
 
-    <div class="clearfix">
-        <input type="text" id="field1" class="textInput" />
+            <input type="text" id="field2" class="textInput" />
+        </div>
 
-        <select class="selectInput" id="operation">
-            <option>+</option>
-            <option>-</option>
-            <option>*</option>
-            <option>/</option>
-        </select>
+        <div class="container">
+            <button class="buttonItem" onClick="buttonClick()">Подсчитать</button>
+        </div>
 
-        <input type="text" id="field2" class="textInput" />
+        <div class="container">
+            <textarea class="textArea" id="result"></textarea>
+        </div>
+
     </div>
-
-    <div class="boxForButton">
-        <button class="buttonItem" onClick="buttonClick()">подсчитать</button>
-    </div>
-    <textarea class="textArea" id="result"></textarea>
 </body>
 
 </html>
