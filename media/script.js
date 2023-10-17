@@ -2,17 +2,18 @@ function buttonClick() {
     let a = document.getElementById("first").value;
     let b = document.getElementById("second").value;
     let operation = document.getElementById("operation").value;
+    let prev_result = document.getElementById("result").value;
     let result = "";
 
     a = parseFloat(a);
     if (isNaN(a)) {
-        alert("Некорректные данные в левой ячейке! Введите число");
+        alert("Please enter a number to first field");
         return;
     }
 
     b = parseFloat(b);
     if (isNaN(b)) {
-        alert("Некорректные данные в правой ячейке! Введите число");
+        alert("Please enter a number to second field");
         return;
     }
 
@@ -38,6 +39,6 @@ function buttonClick() {
     }
 
     result = a + " " + operation + " " + b + " = " + result;
-
+    document.getElementById("prev_result").value = prev_result;
     document.getElementById("result").value = result;
 }
