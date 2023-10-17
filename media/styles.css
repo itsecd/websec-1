@@ -1,0 +1,80 @@
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.appearance{
+    border: 2px dashed;
+    border-color: red;
+}
+
+.appearance, .resultField, .totalContainer {
+    border-radius: 10px;  
+    background-color: rgb(165, 255, 156);
+    color: red;
+}
+
+.inputField, .operationField, .button {
+    height: 40px;
+    margin: 3%;
+    font-size: 20pt;
+    border: 2px dashed;
+}
+
+.inputField {
+    width: 30%;
+    float: left;
+}
+
+.operationField {
+    width: 90px;
+    float: left;
+}
+
+.inputAndOperationContainer {
+    width: 100%;
+}
+
+.button {
+    width: 200px;
+}
+
+.resultField {
+    width: 100%;
+    height: 40px;
+    font-size: 16pt;
+    border-style: solid;
+    border-color: rgb(165, 255, 156);
+    resize: none;
+}
+
+.textOutputTransparent {
+    opacity: .5;
+}
+
+.resultContainer {
+    width: 90%;
+    height: 80px;
+    padding: 8px;
+}
+
+.totalContainer {
+    height: 100%;
+    max-height: 450px;
+    min-height: 300px;
+    flex-direction: column;
+}
+
+@media (max-width: 600px){
+    .inputField{
+        width: 80%;
+    }
+    .operationField {
+        width: 20%;
+    }
+    .inputAndOperationContainer {
+        flex-direction: column;
+    }
+
+}
