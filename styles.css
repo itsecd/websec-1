@@ -1,0 +1,89 @@
+.container {
+    background-color: rgb(186, 255, 194);
+    border-block-color: rgb(255, 0, 0);
+
+    border: dashed 2.2px;
+    border-radius: 10px;
+
+    text-align: center;
+    vertical-align: central;
+    min-height: 30px;
+}
+
+.input {
+    margin: 1em; /* Поля  вокруг элемента */
+    min-width: 150px;
+    max-width: 180px;
+    width: 15%;
+
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.topline {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    color: rgb(255, 0, 0);
+
+    margin: 1em auto;
+    display: inline-flex;
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 30px;
+    width: 10%;
+
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+
+}
+
+.choice {
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.row {
+    display: inline-flex;
+    display: block;
+    align-self: center;
+    align-items: center;
+}
+
+.memorylist {
+    color: rgb(216, 141, 107);
+}
+
+
+.textareatext {
+    margin: 2em auto;
+    min-height: 50px;
+    min-width: 250px;
+    width: 45%;
+}
+
+body {
+    background-color: rgb(186, 255, 194);
+    color: rgb(255, 0, 0);
+
+    margin: 3em auto;
+    min-width: 250px;
+
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: central;
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 1em auto;
+        display: block;
+        text-align: center;
+    }
+}
