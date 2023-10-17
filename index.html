@@ -9,22 +9,22 @@
 <body>
     <div class="background">
         <div class="container">
-            <input type="text" id="field1" class="textInput" />
-            <select class="selectInput" id="operation">
+            <input type="text" class="baseStyle valueInput" id="field1" />
+            <select class="baseStyle selectInput" id="operation">
                 <option>+</option>
                 <option>-</option>
                 <option>*</option>
                 <option>/</option>
             </select>
-
-            <input type="text" id="field2" class="textInput" />
+            <input type="text" class="baseStyle valueInput" id="field2" />
         </div>
 
         <div class="container">
-            <button class="buttonItem" onClick="buttonClick()">Подсчитать</button>
+            <button class="baseStyle buttonStyle" onClick="buttonClick()">Подсчитать</button>
         </div>
 
-        <div class="container">
+        <div class="verticalContainer baseStyle">
+            <textarea class="textArea" id="prev_result"></textarea>
             <textarea class="textArea" id="result"></textarea>
         </div>
 

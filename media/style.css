@@ -1,72 +1,53 @@
 .background {
-    background-color: #8ae09bdb;
+    background-color: rgb(186, 255, 194);
     border-radius: 15px;
-    max-width: max-content;
-    min-width: min-content;
-    width: 80%;
+    max-width: 700px;
+    /* min-width: min-content; */
+    width: 100%;
 }
 
-/* .container {
-    width: fit-content;
-} */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-.textInput {
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
+.baseStyle {
+    margin: 10px;
+    padding: 0px 6px;
     border-radius: 6px;
     border: red dashed 1px;
     font-size: 20px;
     color: red;
-    width: 200px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0);
+    background: none;
 }
 
 .selectInput {
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 6px;
-    border: red dashed 1px;
-    font-size: 20px;
-    color: red;
     width: 100px;
     height: 40px;
-    background: rgba(0, 0, 0, 0);
 }
 
-.buttonItem {
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 6px;
-    border: red dashed 1px;
-    font-size: 20px;
-    color: red;
+.valueInput{
     width: 200px;
     height: 40px;
-    background: rgba(0, 0, 0, 0);
+}
+
+.buttonStyle{
+    width: 150px;
+    height: 40px;
+}
+
+.verticalContainer {
+    display: flex;
+    /* flex-direction: column;  */
+    width: 100%;    
 }
 
 .textArea {
-    margin: 20px;
-    padding-left: 6px;
-    padding-right: 6px;
-    width: 80%;
-    height: 20%;
-    border-radius: 6px;
-    border: red dashed 1px;
-    font-size: 20px;
-    color: red;
-    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 30px;
     resize: none;
-}
-
-.boxForButton {
-    display: flex;
-    width: 600px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+    background: none;
+    border: none;
 }
