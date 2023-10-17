@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="media/styles.css">
+    <script src="media/script.js"></script>
+</head>
+
+<body>
+    <div class="totalContainer flex">
+        <div class="inputAndOperationContainer flex">
+            <input type="text" id="number1" class="inputField  appearance"/>
+
+            <select class="operationField  appearance" id="operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+
+            <input type="text" id="number2" class="inputField  appearance"/>
+        </div>
+    
+        <button class="button appearance" onclick="onButtonClick()">подсчитать</button>
+        
+        <div class="resultContainer appearance">
+            <textarea class="resultField textOutputTransparent" id="previous_result" readonly></textarea>
+            <textarea class="resultField" id="result" readonly></textarea>
+        </div>
+        
+    </div>
+</body>
+
+</html>
