@@ -36,7 +36,7 @@ function onButtonClick(event)
                 result = v1 * v2;
                 break;
             case '/':
-                if (v2 === 0)
+                if (Math.abs(v2) < Number.EPSILON) 
                 {
                     num2Input.classList.add("blinking");
                     document.getElementById("resultLast").value = "Нельзя делить на 0";
