@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
@@ -8,7 +9,6 @@
 </head>
 
 <body>
-
 <div class="container">
     <input type="text" id="number1" class="inputField"/>
 
@@ -19,16 +19,18 @@
         <option>/</option>
     </select>
 
-    <input type="text" id="number2" class="inputField"/>
+    <input type="text" id="number2" class="inputField" />
 
     <div class="buttonContainer">
-        <button class="button" onclick="onButtonClick()">Вычислить</button>
+        <button class="button" onClick="onButtonClick()">calculate</button>
     </div>
 
     <div class="resultField" id="output">
-        <span id="previous-operation" class="previous-operation"></span><br>
-        <span id="current-operation" class="current-operation"></span>
+
+        <span id="prevOperation" class="previousOperation"></span><br>
+        <span id="curOperation" class="currentOperation"></span>
     </div>
 </div>
 </body>
+
 </html>
