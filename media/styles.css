@@ -1,0 +1,129 @@
+.inputField 
+{
+    width: 35%;
+    min-width: 150px;
+    height: 40px;
+
+    color: red;
+    background-color: aquamarine;
+    margin: 3%;
+    font-size: 15pt;
+    border-width: 2px;
+    border-color: red;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+.operationField 
+{
+    width: 10%;
+    min-width: 40px;
+    height: 40px;
+
+    color: red;
+    background-color: aquamarine;
+    margin: 3%;
+    font-size: 15pt;
+    border-width: 2px;
+    border-color: red;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+.equalButton 
+{
+    width: auto;
+    min-width: auto;
+    height: 40px;
+
+    color: red;
+    background-color: aquamarine;
+    margin: 3% auto;
+    font-size: 15pt;
+    border-width: 2px;
+    border-color: red;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+.inputContainer
+{
+    width: 100%;
+    max-width: 600px;
+}
+
+.inputContainer::after
+{
+    content: "";
+    clear: both;
+    display: block;
+    align-items: center;
+}
+
+.buttonContainer
+{
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.outputField 
+{
+    width: 100%;
+    min-width: 150px;
+    height: 400px;
+    resize: none;
+
+    color: rgb(75, 75, 75);
+    background-color: aquamarine;
+    margin: 3%;
+    font-size: 15pt;
+    border-width: 2px;
+    border-color: red;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+.resultField 
+{
+    width: 100%;
+    min-width: 150px;
+    height: 40px;
+    resize: none;
+    
+    color: red;
+    background-color: aquamarine;
+    margin: 3%;
+    font-size: 15pt;
+    border-width: 2px;
+    border-color: red;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+.outputContainer
+{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    resize: none;
+}
+
+
+
+@keyframes blink {
+    0%, 100% { border-style: dashed; border-color: red; }
+    50% { border-style: solid; border-color: red; }
+}
+
+
+.blinking {
+    animation: blink 1s infinite;
+}

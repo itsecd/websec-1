@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="media/styles.css"/>
+        <script src="media/script.js"></script>
+    </head>
+    <body>
+        <div class="inputContainer">
+            <input type="Text" id="input1" class="inputField"/>
+            <select id="operation" class="operationField">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="Text" id="input2" class="inputField"/>
+        </div>
+
+        <div class="outputContainer">
+            <button id="equalButton" class="equalButton" onClick="onButtonClick()">Рассчитать</button>
+        </div>
+        <div class="outputContainer">
+            <textarea id="output" class="outputField" readonly placeholder="Предыдущие результаты"></textarea>
+        </div>
+        <div class="outputContainer">
+            <textarea id="resultLast" class="resultField" readonly placeholder="Результат текущего вычисления"></textarea>
+        </div>
+        
+
+    </body>
+</html>
