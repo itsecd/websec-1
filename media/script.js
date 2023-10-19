@@ -30,13 +30,13 @@ function onButtonClick(event)
                 result = v1 * v2;
                 break;
             case '/':
-                if (v2 === 0)
+                if ((Math.abs(v2) < Number.EPSILON))
                 {
                     document.getElementById("output").value = "Error: can't divide by zero!";
                     console.log(document.getElementById("output").value);
                     return;
                 }
-                result = v1 + v2;
+                result = v1 / v2;
                 break;
         }
     }

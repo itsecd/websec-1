@@ -1,71 +1,44 @@
 body
 {
-    background-color: purple;
+    background-color: rgb(186,255,194);
 }
 
+.overallShape
+{
+    height: 40px;
+    color: rgb(255,0,0);
+    background-color: rgb(186,255,194);
+    margin: 3%;
+    border-color: rgb(255,0,0);
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 10px;
+}
 
-.inputField 
+.inputField
 {
     width: 35%;
     min-width: 150px;
-
-    height: 40px;
-    color: yellow;
-    background-color: purple;
-    margin: 3%;
-    font-size: 15pt;
-    border-width: 2px;
-    border-color: yellow;
-    border-style: dashed;
-
+    
 }
 
 .operationField 
 {
     width: 10%;
     min-width: 40px;
-
-    height: 40px;
-    color: yellow;
-    background-color: purple;
-    margin: 3%;
-    font-size: 15pt;
-    border-width: 2px;
-    border-color: yellow;
-    border-style: dashed;
-
 }
 
 .equalButton 
 {
     width: 10%;
     min-width: 40px;
-
-    height: 40px;
-    color: yellow;
-    background-color: purple;
     margin: 3% auto;
-    font-size: 15pt;
-    border-width: 2px;
-    border-color: yellow;
-    border-style: dashed;
-
 }
 
 .outputField 
 {
     width: 100%;
     min-width: 150px;
-    
-    height: 40px;
-    color: yellow;
-    background-color: purple;
-    margin: 3%;
-    font-size: 15pt;
-    border-width: 2px;
-    border-color: yellow;
-    border-style: dashed;
-
 }
 
 .inputContainer

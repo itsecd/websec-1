@@ -4,22 +4,25 @@
         <script src="media/script.js"></script>
     </head>
     <body>
-        <div class="inputContainer">
-            <input type="Text" id="input1" class="inputField"/>
-            <select id="operation" class="operationField">
+        <div class="window">
+            <div class="inputContainer">
+            <input type="Text" id="input1" class="overallShape inputField "/>
+            <select id="operation" class="overallShape operationField">
                 <option>+</option>
                 <option>-</option>
                 <option>*</option>
                 <option>/</option>
             </select>
-            <input type="Text" id="input2" class="inputField"/>
+            <input type="Text" id="input2" class="overallShape inputField"/>
+            </div>
+            <div class="buttonContainer">
+                <button id="equalButton" class="overallShape equalButton" onClick="onButtonClick()">=</button>
+            </div>
+            <div class="outputContainer">
+                <textarea id="output" class="overallShape outputField" readonly></textarea>
+            </div> 
         </div>
-        <div class="outputContainer">
-            <button id="equalButton" class="equalButton" onClick="onButtonClick()">=</button>
-        </div>
-        <div class="outputContainer">
-            <textarea id="output" class="outputField" readonly></textarea>
-        </div>
+
         
     </body>
 </html>
