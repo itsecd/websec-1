@@ -1,0 +1,88 @@
+body {
+    min-width: 400px;
+    min-height: 400px;
+}
+
+.container {
+    margin-top: 20%;
+    margin-left: 30%;
+    min-height: 200px;
+    min-width: 200px;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgb(200, 250, 200);
+}
+
+.container_field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+._post {
+    margin-top: 3%;
+    width: 10vw;
+    height: 4vh;
+    min-width: 42px;
+    min-height: 28px;
+    color: rgb(220, 10, 10);
+    border: 2px dashed rgb(220, 10, 10);
+    background: rgb(200, 250, 200);
+    border-radius: 8px;
+}
+
+.selector {
+    margin-top: 3%;
+    width: 6%;
+    height: 5%;
+    min-width: 41px;
+    min-height: 20px;
+    color: rgb(220, 10, 10);
+    border: 2px dashed rgb(220, 10, 10);
+    background: rgb(200, 250, 200);
+    border-radius: 5px;
+}
+
+.button {
+    width: 19%;
+    height: 6%;
+    min-width: 40px;
+    min-height: 21px;
+    font-size: 8px;
+    margin-left: 40.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(220, 10, 10);
+    border: 2px dashed rgb(220, 10, 10);
+    background: rgb(200, 250, 200);
+    border-radius: 5px;
+    align-content: left;
+}
+
+.button::content {
+    margin-bottom: 10%;
+}
+
+.result_field {
+    width: 28%;
+    height: 10%;
+    min-height: 50px;
+    min-width: 55px;
+    margin-left: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed rgb(220, 10, 10);
+    background: rgb(200, 250, 200);
+    border-radius: 8px;
+}
+
+#result {
+    color: rgb(220, 10, 10);
+}
