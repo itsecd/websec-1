@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="media/styles.css"/>
+    <script src="media/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="number1" class="inputField"/>
+
+
+        <select class="operationField" id="operation">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+
+
+        <input type="text" id="number2" class="inputField"/>
+
+    </div>
+
+    <div class="buttonContainer">
+        <button class="button" onclick="onButtonClick()">ПОДСЧИТАТЬ</button>
+    </div>
+
+    <div class="resultContainer">
+        <textarea rows="2" class="resultField" id="results" readonly contenteditable="true"></textarea>
+    </div>
+    
+</body>
+
+</html>

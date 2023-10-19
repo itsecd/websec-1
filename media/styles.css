@@ -1,0 +1,73 @@
+.container, .buttonContainer, .resultContainer{
+    width: 100%;
+    max-width: 600px;
+    background-color: #c0ffc0;
+    flex-wrap: wrap-reverse;
+    
+}
+
+.container::after{
+    content:"";
+    clear: both;
+    display: table;
+    border-radius: 10px;
+}
+
+
+
+.inputField, .operationField, .button, .resultField{
+    background-color: #c0ffc0;
+    border-style: dotted;
+    border-color: red;
+    border-radius: 10px;
+    border-width: 2px;
+
+    color:red;
+    font-weight:bold;
+}
+
+
+
+.inputField{
+    width: 228px;
+    height: 38px;
+    font-size: 15pt;
+    margin: 11px;
+    padding: 19px;
+    float: left;
+}
+
+.operationField{
+    width: 75px;
+    height: 38px;
+    font-size: 15pt;
+    margin: 11px;
+    padding: 5px;
+    float:left;
+}
+
+.button{
+    width: 190px;
+    height: 38px;
+    font-size: 10pt;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+}
+
+
+.resultField{
+    width: 578px;
+    height: 95px;
+    font-size: 15pt;
+    padding: 19px;
+    margin: 11px;
+}
+
+@media screen  and (min-width: 600px){
+
+}
