@@ -1,0 +1,29 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="media/styles.css">
+        <script src="media/script.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <input type="text" id="input1" onfocus="resetStyle()" class="inputField" required>
+
+            <select class="operationField" id="operator">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+
+            <input type="text" id="input2" onfocus="resetStyle()" class="inputField" required>
+        
+        <div class="buttonContainer">
+            <button id="but" class="button" onclick="onButtonClick()">вычислить</button>
+        </div>
+        <div class="resultField" id="result">
+        </div>
+    </div> 
+    </body>
+
+</html>

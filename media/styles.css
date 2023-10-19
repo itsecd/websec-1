@@ -1,0 +1,121 @@
+.inputField {
+    width: 30%;
+    height: 40px;
+    background-color: transparent;
+    margin: 3%;
+    font-size: 15pt;
+    float: left;
+    border: 2px dashed rgb(255, 70, 70);;
+    border-radius: 10px;
+    color: rgb(255, 70, 70);
+    text-align: center;
+}
+
+.operationField {
+    width: 20%;
+    height: 40px;
+    background-color: transparent;
+    margin: 3%;
+    font-size: 15pt;
+    float: left;
+    border: 2px dashed rgb(255, 70, 70);
+    border-radius: 10px;
+    color: rgb(255, 70, 70);
+    text-align: center;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    font-size: 15pt;
+    border: 2px dashed rgb(255, 70, 70);
+    border-radius: 10px;
+    color: rgb(255, 70, 70);
+    text-align: center;
+    align-items: center;
+    padding-bottom: 0.8%;
+    transition: all 0.5s linear 0s;
+}
+
+.button:hover {
+    background-position: 0 -102%;
+    background-color: rgb(112, 250, 70);
+}
+
+.resultField {
+    width: 88%;
+    max-width: 600px;
+    height: 120px;
+    margin: 3%;
+    font-size: 15pt;
+    background-color: transparent;
+    border: 2px dashed rgb(255, 70, 70);
+    border-radius: 10px;
+    color: rgb(255, 70, 70);
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    word-spacing: 2%;
+    line-height: normal;
+}
+
+.resultLinePrev{
+    width: 70%;
+    font-size: 15pt;
+    background-color: transparent;
+    border: 2px dashed transparent;
+    border-radius: 10px;
+    color: rgb(255, 140, 140);
+    text-align: left;
+    word-spacing: 2%;
+    line-height: normal;
+}
+
+.resultLineCur{
+    width: 70%;
+    font-size: 15pt;
+    background-color: transparent;
+    border: 2px dashed transparent;
+    border-radius: 10px;
+    color: rgb(255, 70, 70);
+    text-align: left;
+    word-spacing: 2%;
+    line-height: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    min-width: 240px;
+    background-color: rgba(165, 242, 165, 0.959);
+}
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+}
+
+@media screen and (max-width: 500px){
+    .inputField{
+       width: 92%
+   };
+   .operationField{ 
+       width: 30%;
+       margin-left: 35%;
+   }
+   .resultField{
+       min-height: 50px;
+       height: auto;
+   }
+}
