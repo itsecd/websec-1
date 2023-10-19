@@ -1,14 +1,15 @@
 function onButtonClick(event) {
-    let v1 = document.getElementById("number1").value;
-    let v2 = document.getElementById("number2").value;
-    let op = document.getElementById("operation").value;
+   
+    const inp1 = document.getElementById("number1");
+    const inp2 = document.getElementById("number2");
     
-    const inp2 = document.getElementById("number2")
-    const inp1 = document.getElementById("number1")
+    let v1 = inp1.value;
+    let v2 = inp2.value;
+    let op = document.getElementById("operation").value;
 
     let previousOperation = document.getElementById('previous-operation');
     let currentOperation = document.getElementById('current-operation');
-    let cur = document.getElementById('current-operation').value;
+    let cur = currentOperation.value;
     
     let result = null;
     inp1.classList.remove("highlight");
@@ -38,20 +39,25 @@ function onButtonClick(event) {
                 result =` ${v1} ${op} ${v2} = ${v1 * v2}`;
             }
             if (op === '/') {
-                if (Math.abs(v2) < Number.EPSILON){
+                if (Math.abs(v2) < Number.EPSILON) {
                     inp2.classList.add("highlight");
                     result = `Ошибка: делить на ноль нельзя`;
                 }
-                else{
+                else {
                     inp2.classList.remove("highlight");
-                    result = `${v1} ${op} ${v2} = ${v1 / v2}`;}
+                    result = `${v1} ${op} ${v2} = ${v1 / v2}`;
+                }
             }
         }
     }
+
     if (cur == null){
         previousOperation.textContent = ``;
     }
-    else{previousOperation.textContent = `${cur}`;}
+    else {
+        previousOperation.textContent = `${cur}`;
+    }
+    
     currentOperation.textContent = `${result}`;
     
     document.getElementById('current-operation').value = `${result}`;

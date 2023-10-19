@@ -1,18 +1,21 @@
+.inputField, .operationField, .button, .resultField {
+    background-color: #baffc2;
+    color: #e75842;
+    border-radius: 10px;
+    border: dashed #e75842;
+    border-width: 2px;
+    font-size: 20pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
 .inputField {
     width: 100%;
     height: 100%; 
     max-width: 300px;
     max-height: 50px;
-    background-color: #baffc2;
     margin: 3%; 
-    font-size: 20pt;
-    color: #e75842;
     float: left;
-    border-radius: 10px;
-    border: dashed #e75842;
-    border-width: 2px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
 }
 
 .operationField {
@@ -20,16 +23,9 @@
     height: 100%;
     max-width: 100px;
     max-height: 50px;
-    background-color: #baffc2;
-    border-radius: 10px;
-    border: dashed #e75842;
-    border-width: 2px;
     margin: 3%;
-    font-size: 20pt;
     float: left;
-    color: #e75842;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+
 }
 
 .button {
@@ -37,27 +33,12 @@
     height: 100%;
     max-width: 300px;
     max-height: 50px;
-    background-color: #baffc2;
-    border-radius: 10px;
-    border: dashed #e75842;
-    border-width: 2px;
-    font-size: 20pt;
-    color: #e75842;
-    font-weight: bold;
 }
 
 .resultField {
-    
     max-width: 800px;
     max-height: 150px;
-    background-color: #baffc2;
-    border-radius: 10px;
-    border: dashed #e75842;
-    border-width: 2px;
-    font-size: 20pt;
     margin: 3%; 
-    font-family: Arial, sans-serif;
-    font-weight: bold;
 }
 
 .container {
