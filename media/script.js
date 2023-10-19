@@ -106,8 +106,3 @@ function resetStyle(){
     let input2 = document.getElementById("input2");
     input2.style.background = "transparent";
 }
-
-function focusButton(){
-    let but = document.getElementById("but");
-    but.style.background = "lightblue";
-}
