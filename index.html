@@ -10,22 +10,22 @@
 
 <body>
 <div class="container">
-    <input type="text" id="number1" class="inputField"/>
+    <input type="number" id="number1" class="field" required/>
 
-    <select class="operationField" id="operation">
+    <select id="operation" class="field operation" >
         <option>+</option>
         <option>-</option>
         <option>*</option>
         <option>/</option>
     </select>
 
-    <input type="text" id="number2" class="inputField" />
+    <input type="number" id="number2" class="field" required/>
 
     <div class="buttonContainer">
-        <button class="button" onClick="onButtonClick()">calculate</button>
+        <button class="field" onClick="onButtonClick()">calculate</button>
     </div>
 
-    <div class="resultField" id="output">
+    <div id="output" class="field result">
 
         <span id="prevOperation" class="previousOperation"></span><br>
         <span id="curOperation" class="currentOperation"></span>
