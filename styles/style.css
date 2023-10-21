@@ -1,0 +1,36 @@
+.calculator {
+    background-color: aqua;
+    max-width: 540px;
+    border-radius:10pt
+}
+
+.input-row {
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-row {
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-row {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    
+}
+
+input {
+
+}
+
+textarea
+{
+    width: 90%;
+    margin:2%;
+}
