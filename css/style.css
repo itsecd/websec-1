@@ -1,0 +1,107 @@
+.forCenter
+{    
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  flex-direction: column; 
+  background-color: #baffc2;
+  max-width: 600px;
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.itemInRow {
+  background-color: inherit;
+  color: red;
+  margin: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+}
+
+.textinput {
+  /*margin: 20px; 
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 6px; */
+  border: red dashed 2px;
+  /*font-size: 20px;
+   color: red; */
+  max-width: 200px;
+  text-indent: 10px;
+  height: 30px;
+}
+
+.selectinput {
+  /*margin: 20px; 
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 12px; */
+  border: red dashed 2px;
+  /*font-size: 20px;
+   color: red; */
+  max-width: 100px;
+  min-width: 90px;
+  min-height: 35px;
+  text-indent: 10px;
+}
+
+.buttonItem
+{
+  width: 40%;
+  /* margin: 20px; 
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 12px; */
+  border: red dashed 2px;
+  /*font-size: 20px;
+   color: red; */
+  width: 215px;
+  height: 45px;
+}
+
+.textArea
+{
+  /* margin: 20px; 
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 12px; */
+  border: red dashed 2px;
+  /*font-size: 20px;
+   color: red; */
+  max-width: 600px;
+  text-indent: 10px;
+  width: 70%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+
+/*.clearfix {
+  display: table;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center; 
+}*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  /*max-width: inherit;
+  max-width: 800px;
+  width: 700px;
+  height: auto;*/
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
