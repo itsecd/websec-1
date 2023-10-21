@@ -1,31 +1,27 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script type="text/javascript" src="./script.js"></script>
-    <title>Calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css">
+	<script type="text/javascript" src="./script.js"></script>
+	<title>Calculator</title>
 </head>
 
 <body>
-    <div class = "main_box">
-        <div class = "input_box">
-            <input type="text" id="num1">
-            <select id="selectOperations">
-                <option>+</option>
-                <option>-</option>
-                <option>/</option>
-                <option>*</option>
-            </select>
-            <input type="text" id="num2">
-        </div>
-        <button type="submit" class="calculate_button" value="main_button" onclick="calculate()">подсчитать</button>
-        <div method="get" action="" class="result_area">
-            <var id="memory"></var>
-            <var id="lastresult"></var>
-        </div>
-    </div>
+	<div class="main_box">
+		<div class="input_box">
+			<input type="text" id="first_input">
+			<select id="selectOperations">
+				<option>+</option>
+				<option>-</option>
+				<option>/</option>
+				<option>*</option>
+			</select>
+			<input type="text" id="second_input"> </div>
+		<button type="submit" class="calculate_button" value="main_button" onclick="calculate()">подсчитать</button>
+		<div method="get" action="" class="result_area"> <var id="last_result"></var> <var id="this_result"></var> </div>
+	</div>
 </body>
 
 </html>

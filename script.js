@@ -3,21 +3,19 @@ function error(str) {
 }
 
 function calculate() {
-    let num1 = document.getElementById("num1").value;
-    let num2 = document.getElementById("num2").value;
+    let num1 = document.getElementById("first_input").value;
+    let num2 = document.getElementById("second_input").value;
     let operation = document.getElementById("selectOperations");
-    let result = document.getElementById("lastresult").value;
+    let result = document.getElementById("this_result").value;
 
-    if(isNaN(num1))
-    {
+    if(isNaN(num1)) {
       num1.onclick = error("первом поле");
-      document.getElementById("num1").focus();
+      document.getElementById("first_input").focus();
       return
     }
-    if(isNaN(num2))
-    {
+    if(isNaN(num2)) {
       num2.onclick = error("втором поле");
-      document.getElementById("num2").focus();
+      document.getElementById("second_input").focus();
       return
     }
 
@@ -42,6 +40,6 @@ function calculate() {
     if (!isNaN(result))
     result = num1 + " " + operation.value + " " + num2 + " " + "=" + " " + result;
 
-    document.getElementById("memory").innerHTML = document.getElementById("lastresult").innerHTML;  
-    document.getElementById("lastresult").innerHTML = result + "<br/>";
+    document.getElementById("last_result").innerHTML = document.getElementById("this_result").innerHTML;  
+    document.getElementById("this_result").innerHTML = result + "<br/>";
 }
