@@ -20,8 +20,13 @@
     font-size:20px;
     float:left;
 }
-
-  .first_line{
+.class{
+  background: rgb(200, 255, 200);
+  border-radius: 11px;
+  border: 2px dashed rgb(210, 50, 50);
+  color: rgb(199, 56, 56);
+}
+  .class.first_line{
     margin-top: 2%;
     margin-left: 20px;
     margin-right: 20px;
@@ -30,48 +35,33 @@
     height: 30px;
     min-width: 60px;
     min-height: 28px;
-    color: rgb(199, 56, 56);
-    border: 2px dashed rgb(210, 50, 50);
-    background: rgb(200, 255, 200);
-    border-radius: 11px;
   }
 
-  .second_line{
+  .class.second_line{
     padding-left: 10px;
     margin-top: 2%;
     margin-left: 20px;
     width: 190px;
     height: 30px;
-    color: rgb(199, 56, 56);
-    border: 2px dashed rgb(210, 50, 50);
-    background: rgb(200, 255, 200);
-    border-radius: 11px;
   }
 
-  .operationInput{
+  .class.operationInput{
     width:75px;
     height:30px;
-    background-color:rgb(200, 255, 200);
     font-size:20px;
-    border: 2px dashed rgb(210, 50, 50);
-    border-radius: 11px;
 }
 
-  .button{
+  .class.button{
    position:relative;
    top:25px;
    left:200px;
     width:140px;
     height:30px;
-    background-color: rgb(200, 255, 200);
     font-size: 15pt;
     border-width: 2px;
-    color: rgb(199, 56, 56);
-    border: 2px dashed rgb(210, 50, 50);;
-    border-radius: 11px;
   }
 
-.resultAR{
+.class.resultAR{
   position:relative;
   top:65px;
   margin-left:45px;
@@ -80,10 +70,6 @@
   height:60px;
   padding-top: 5px;
   padding-left:10px;
-  color: rgb(199, 56, 56);
-  border: 2px dashed rgb(210, 50, 50);
-  background: rgb(200, 255, 200);
-  border-radius: 11px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -106,7 +92,11 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: column;
   }
 
-  .first_line{
+  .class{
+
+  }
+
+  .class.first_line{
     margin-top: 5%;
     margin-left: 25px;
     padding-left: 10px;
@@ -114,7 +104,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 35px;
   }
 
-  .second_line{
+  .class.second_line{
   margin-top: 18px;
     margin-left: 25px;
     padding-left: 10px;
@@ -122,7 +112,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 35px;
   }
 
-  .button{
+  .class.button{
     position:relative;
     top:20px;
     left:60px;
@@ -130,7 +120,7 @@ input[type=number]::-webkit-outer-spin-button {
      height:30px;
   }
 
-  .resultAR{
+  .class.resultAR{
     position:relative;
     top:55px;
     right:15px;

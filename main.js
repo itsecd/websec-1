@@ -16,10 +16,16 @@ var resultOut='';
         resultOut = parseFloat(v1) * parseFloat(v2);
           break;
       case '/':
-          if (parseFloat(v2) != 0)
-          resultOut = parseFloat(v1) / parseFloat(v2);
-          else
-          resultOut = "Division by zero";
+        if(v2.length == 0)
+        {
+          resultOut = "Second parameter is missing";
+        }  
+       else if (Math.abs(v2) < Number.EPSILON){
+         resultOut = "Division by zero";
+        } 
+          else{
+            resultOut = parseFloat(v1) / parseFloat(v2);
+          }
           break;
   }
   resultOut = v1 + " " + op + " " + v2 + " " + "=" + " " + resultOut;
