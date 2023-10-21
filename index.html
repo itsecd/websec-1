@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./media/styles.css"/>
+        <script src="media/script.js"></script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="clearfix">
+                <input type="text" id="field1" class="textInput ">
+                <select  class="selectInput itemInRow" id="operator">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+                <input type="text" id="field2" class="textInput ">
+            </div>
+            <div class="boxForButton">
+                <button  class="buttonItem" onclick="buttonClick()">Подсчитать</button>
+            </div>
+            <div class="textArea">
+                <textarea class="invisAreaHist" id="history" readonly></textarea>
+                <textarea class="invisAreaCalc" id="result" readonly></textarea> 
+            </div> 
+        </div>        
+    </body>
+</html>
