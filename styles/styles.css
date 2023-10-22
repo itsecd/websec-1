@@ -1,23 +1,80 @@
-.numberUnput{
-    margin: 20px;
-    width: 200px;
-    height: 40px;
-    color: aquamarine;
-    font-size: 20pt;
-    float: left;
-    clear: both;
+.backgroundStyle {
+    background-color: rgb(186,255,200);
+    border-radius: 7px;
+    width: 500px;
+    height: 189px;
 }
 
-.operationInput{
-    margin: 20px;
-    width: 60px;
-    height: 40;
-    color: bisque;
-    font-size: 20pt;
-    float: left;
-    clear: both;
+.divStyle {
+    margin: 2%; 
+    height: auto;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(186,255,200);
 }
 
-.container{
-    clear: both;
+.inputStyle, .selectStyle, .buttonStyle, .outputStyle, .textareaLastOutputStyle,  .textareaPreviousOutputStyle{
+    font-family: 'Verdana', Times, sans-serif; 
+    font-size: small; 
+    background-color: rgb(186,255,200);
+    color: red;
 }
+
+.inputStyle, .selectStyle, .buttonStyle, .outputStyle {
+    height: 100%;
+    margin: 1%;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-style: dotted;
+    border-color: red;
+    font-weight: bold;
+}
+
+.inputStyle {
+    width: 30%;
+    padding: 6px;
+}
+
+.selectStyle {
+    width: 20%;
+    padding: 3px;
+}
+
+.buttonStyle{
+    width: 25%;
+    padding: 6px;
+}
+
+.textareaLastOutputStyle, .textareaPreviousOutputStyle { 
+    width: 98%;
+    height: 5%;
+    border-color: rgb(186,255,200);
+    resize: none;
+    text-align: center;
+}
+
+.textareaPreviousOutputStyle {
+    opacity: .4;
+}
+
+.outputStyle {
+    width: 70%;
+}
+
+@media screen and (max-width:550px){ 
+    .backgroundStyle {
+        width: 100%;
+        min-width: 50px;
+        height: 260px;
+    }
+
+    .inputStyle {
+        width: 50%;
+    }
+    
+    .divStyle {
+        flex-direction: column;
+    }
+ }
