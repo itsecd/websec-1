@@ -6,28 +6,30 @@
 </head>
 
 <body>
-    <div class="flex_container">
-        <input type="text" class="textInput" id="first">
+    <div class="main_container">
+        <div class="flex_container">
+            <input type="text" class="textInput" id="first">
 
-        <select class="selectInput" id="operation">
-            <option>+</option>
-            <option>-</option>
-            <option>*</option>
-            <option>/</option>
-        </select>
+            <select class="selectInput" id="operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
 
-        <input type="text" class="textInput" id="second">
+            <input type="text" class="textInput" id="second">
+        </div>
+
+        <div class="flex_container">
+            <button class="button" onclick="buttonClick()">Посчитать</button>
+        </div>
+
+        <div class="flex_container">
+            <textarea class="textArea" id="prev_result" readonly></textarea>
+            <textarea class="textArea" id="result" readonly></textarea>
+        </div>
+
     </div>
-
-    <div class="flex_container">
-        <button class="button" onclick="buttonClick()">Посчитать</button>
-    </div>
-
-    <div class="flex_container">
-        <textarea class="textArea" id="prev_result" readonly></textarea>
-        <textarea class="textArea" id="result" readonly></textarea>
-    </div>
-
 </body>
 
 </html>

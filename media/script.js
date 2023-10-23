@@ -8,12 +8,14 @@ function buttonClick() {
     a = parseFloat(a);
     if (isNaN(a)) {
         alert("Please enter a number to first field");
+        document.getElementById("first").value = null;
         return;
     }
 
     b = parseFloat(b);
     if (isNaN(b)) {
         alert("Please enter a number to second field");
+        document.getElementById("second").value = null;
         return;
     }
 
