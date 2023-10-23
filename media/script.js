@@ -31,7 +31,7 @@ function buttonClick() {
             break;
         case "/":
             if (Math.abs(b - 0) < Number.EPSILON) {
-                alert("Деление на 0");
+                alert("Division by 0");
                 return;
             }
             else {
