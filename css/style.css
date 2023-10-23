@@ -26,13 +26,6 @@
 }
 
 .textinput {
-  /*margin: 20px; 
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 6px; 
-  border: red dashed 2px;*/
-  /*font-size: 20px;
-   color: red; */
   max-width: 240px;
   width: 45%;
   text-indent: 10px;
@@ -40,13 +33,6 @@
 }
 
 .selectinput {
-  /*margin: 20px; 
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 12px; 
-  border: red dashed 2px;*/
-  /*font-size: 20px;
-   color: red; */
   max-width: 100px;
   min-width: 90px;
   min-height: 35px;
@@ -56,50 +42,23 @@
 .buttonItem
 {
   width: 40%;
-  /* margin: 20px; 
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 12px; 
-  border: red dashed 2px;*/
-  /*font-size: 20px;
-   color: red; */
   width: 215px;
   height: 45px;
 }
 
-.textArea
+.resultArea
 {
-  /* margin: 20px; 
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 12px; 
-  border: red dashed 2px;*/
-  /*font-size: 20px;
-   color: red; */
   max-width: 600px;
-  /*text-indent: 10px; */
   text-align: left;
   width: 90%;
   height: 100px;
   margin-bottom: 10px;
 }
 
-
-/*.clearfix {
-  display: table;
-  justify-content: center;
-  margin: 0 auto;
-  align-items: center; 
-}*/
-
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
-  /*max-width: inherit;
-  max-width: 800px;
-  width: 700px;
-  height: auto;*/
 }
 
 .flex-container {

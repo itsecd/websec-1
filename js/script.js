@@ -1,6 +1,5 @@
 let prev_result = [];
 let count_of_previous_results = 3;
-/* TODO: validation for divide by zero, also for strings validation..*/
 function ButtonClick()
 {
   document.getElementById("field1").style.border = "red dashed 2px";
@@ -57,16 +56,9 @@ function ButtonClick()
   {
     prev_result.push(`Ошибка: ${result}!`);
   }
-  // document.getElementById("result").value = result;
-  console.log(operand1, operation, operand2, result, typeof operand1, typeof operand2, typeof result);
   const reveresed = [...prev_result].slice(0,-1);
-  if (prev_result.length > 3) {
+  document.getElementById("result").innerHTML = `<p style="opacity: 50%">${reveresed.join("\r\n<br>")}</p><p>${prev_result.slice(-1)}</p>`;
+  if (prev_result.length > count_of_previous_results) {
     prev_result.shift();
   }
-  console.log(prev_result);
-  console.log(prev_result.join("\n"));
-
-  
-  document.getElementById("result").innerHTML = `<p style="opacity: 50%">${reveresed.join("\r\n<br>")}</p><p>${prev_result.slice(-1)}</p>`;
-  // document.getElementById("result").innerHTML = prev_result.join("\r\n");
 }
