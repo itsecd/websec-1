@@ -6,8 +6,8 @@
 </head>
 
 <body>
-    <div class="main_container">
-        <div class="flex_container">
+    <div id="main_container">
+        <div class="flex_container" id="container">
             <input type="text" class="textInput" id="first">
 
             <select class="selectInput" id="operation">
@@ -20,12 +20,12 @@
             <input type="text" class="textInput" id="second">
         </div>
 
-        <div class="flex_container">
-            <button class="button" onclick="buttonClick()">Посчитать</button>
+        <div class="flex_container" id="container">
+            <button class="button" onclick="buttonClick()">Подсчитать</button>
         </div>
 
-        <div class="flex_container">
-            <div class="output">
+        <div class="flex_container" id="container">
+            <div class="output" id="container">
                 <textarea class="textArea light_red" id="prev_result" readonly></textarea>
                 <textarea class="textArea" id="result" readonly></textarea>
             </div>
