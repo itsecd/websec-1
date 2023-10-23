@@ -24,7 +24,7 @@ function buttonClick(){
     if(operation === "/"){
         if (Math.abs(number2) < Number.EPSILON){
             document.getElementById("result").style.color="#880000";
-            document.getElementById("result").value = "Введите число!"
+            document.getElementById("result").value = "На ноль делить нельзя!"
             return;
         }
         else{
@@ -33,6 +33,7 @@ function buttonClick(){
     }
 
     resArr.unshift(document.getElementById("result").value);
+    document.getElementById("history").style.color="darksalmon";
     document.getElementById("history").value = resArr.join('\n');
     document.getElementById("result").style.color="red";
     document.getElementById("result").value = result;
