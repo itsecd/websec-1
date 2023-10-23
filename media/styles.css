@@ -38,16 +38,18 @@
 }
 
 .textArea {
-    margin: 20px;
+    margin: 5px;
     padding-left: 6px;
+    padding-top: 8px;
     padding-right: 6px;
     border-radius: 6px;
-    border: red dashed 1px;
+    border: transparent;
     font-size: 20px;
     color: red;
     width: 500px;
-    height: 50px;
+    height: 40px;
     background: transparent;
+    resize: none;
 }
 
 .clearfix::after {
@@ -65,5 +67,22 @@
 .main_container {
     background-color: #baffc2;
     width: 600px;
-    height: 600px;
+    height: 400px;
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+}
+
+.output {
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+    border: red dashed 1px;
+    color: red;
+}
+
+.light_red {
+    color: #d88f6c;
 }
