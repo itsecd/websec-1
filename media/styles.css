@@ -1,93 +1,117 @@
 .textInput {
     margin: 16px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 12px;
-    border: red dashed 2px;
     font-size: 20px;
-    color: red;
-    width: 200px;
+    width: 37%;
     height: 40px;
-    background-color: rgb(186, 256, 194);
     float: left;
+    padding-left: 12px;
+    padding-right: 12px;
 }
-
+.uniStyle{
+    border: red dashed 2px;
+    color:red;
+    background-color: rgb(186, 256, 194);
+    border-radius: 12px;
+}
 .buttonItem{
     margin: 16px;
     padding-left: 6px;
     padding-right: 6px;
-    border-radius: 12px;
-    border: red dashed 2px;
     font-size: 20px;
-    color: red;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 40px;
-    background-color: rgb(186, 256, 194);
+    display: flex;
+    flex-direction: column;
 }
 
 .textArea{
     margin: 16px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 12px;
-    border: red dashed 2px;
-    color:red;
-    width: 502px;
-    height: 77px;
-    background-color: rgb(186, 256, 194);
+    padding: 6px;
 }
 
-.invisAreaCalc{
+.invisArea{
     border:none;
-    color:red;
     background-color: rgb(186, 256, 194);
-    width: 502px;
+    width: 100%;
     font-size: 20px;
-    height: 20px;
+    height: 3%;
     margin: 8px;
+    padding: 2px;
+    resize: none;
 }
-.invisAreaHist{
-    border:none;
-    color:darksalmon;
-    background-color: rgb(186, 256, 194);
-    width: 502px;
-    font-size: 20px;
-    height: 20px;
-    margin: 8px;
-}
+
 .clearfix::after{
     content: "";
     clear: both;
     display: table;
-
 }
 
 .itemInRow{
     float: left;
-    border: red dashed 2px;
-    color: red;
-    background-color: rgb(186, 256, 194);
     margin: 16px;
     padding-left: 6px;
     padding-right: 6px;
-    border-radius: 12px;
     height: 40px;
-    
 }
 
 .boxForButton{
-    display: flex;
     width: 550px;
-    height: 46px;
     justify-content: center;
     align-items: center;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .background{
     background-color: rgb(186, 256, 194);
-    border-color:rgb(186, 256, 194);
     margin: 24px;
-    width: 546px;
-    height: 235px;
+    width: 550px;
     border-radius: 12px;
+    padding: 6px;
+}
+
+@media screen and (max-width: 550px){
+    .background{
+        width: 230px;
+        height:300px;
+    }
+    .clearfix::after{
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .textInput{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height:12%;
+        margin: 2px;
+    }
+    .itemInRow{
+        margin-left:33%;
+        width: 33%;
+        height: 12%;
+    }
+    .boxForButton{
+        width:100%;
+        height: 15%;
+    }
+    .buttonItem{
+        margin:2px;
+        height:80%;
+        width:70%;
+    }
+    .textArea{
+        margin: 2px;
+        padding: 10px;
+    }
+    .invisArea{
+        height: 10%;
+        margin:1px;
+    }
 }
