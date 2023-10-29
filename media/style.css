@@ -1,0 +1,44 @@
+.body{
+    margin: 25px;
+    background-color: #cfc;
+    border-radius: 15px;
+    max-width: 655px;
+}
+
+.text{
+    background-color: #cfc;
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 15px;
+    border: red dashed 2px;
+    font-size: 20px;
+    color: red;
+}
+
+.textInput{
+    width: 209px; 
+    height: 40px;
+}
+
+.selectInput{
+    width: 85px;
+    height: 45px;
+}
+
+.textArea{
+    width: 600px;
+    height: 100px;
+}
+
+.itemInRow{
+    float: left;
+}
+
+.boxForButton{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="media/style.css">
+    <script src="media/script.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="clearfix ">
+            <input type="text" id="field1" class="textInput itemInRow text">
+            <select class="selectInput itemInRow text" id="operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="text" id="field2" class="textInput itemInRow text">
+        </div>
+        <div class="boxForButton">
+            <button class="buttonItem text" onclick="calc()">подсчитать</button>
+        </div>
+        <div class="textArea text"></div>
+    </div>
+</body>
+
+</html>
