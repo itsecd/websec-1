@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <div class="body">
-        <div class="clearfix ">
+    <div class="body rowWrap">
+        <div class="clearfix">
             <input type="text" id="field1" class="textInput itemInRow text">
             <select class="selectInput itemInRow text" id="operation">
                 <option>+</option>
@@ -22,7 +22,10 @@
         <div class="boxForButton">
             <button class="buttonItem text" onclick="calc()">подсчитать</button>
         </div>
-        <div class="textArea text"></div>
+        <div class="solution textArea text">
+            <textarea disabled id="prevResult"></textarea>
+            <textarea readonly id="curResult"></textarea>
+        </div>
     </div>
 </body>
 

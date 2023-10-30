@@ -4,10 +4,20 @@ function calc() {
     let op = document.getElementById("operation").value;
 
     a = parseFloat(a);
+    if (isNaN(a)) {
+        alert("Некорректные данные в левой ячейке! Введите число");
+        return;
+    }
+
     b = parseFloat(b);
+    if (isNaN(b)) {
+        alert("Некорректные данные в правой ячейке! Введите число");
+        return;
+    }
 
     let res = "";
-    
+    let prevRes = document.getElementById("curResult").value;
+
     switch (op) {
         case "+":
             res = a + b;
@@ -19,9 +29,18 @@ function calc() {
             res = a * b;
             break;
         case "/":
-            res = a / b;
-            break;
+            if (Math.abs(b) < Number.EPSILON) {
+                alert("Некорректные данные в правой ячейке! На ноль делить нельзя");
+                return;
+            }
+            else {
+                res = a / b;
+                break;
+            }
     }
-    
-    document.getElementById("result").value = res;
+
+    curRes = a + " " + op + " " + b + " = " + res;
+
+    document.getElementById("prevResult").value = prevRes;
+    document.getElementById("curResult").value = curRes;
 }
