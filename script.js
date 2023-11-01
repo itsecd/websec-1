@@ -30,10 +30,10 @@ function calculate() {
             result = parseFloat(num1) * parseFloat(num2);
             break;
         case '/':
-            if (parseFloat(num2) != 0)
-                result = parseFloat(num1) / parseFloat(num2);
-            else
+            if (Math.abs(num2 - 0) < Number.EPSILON)
                 result = "На ноль делить нельзя!";
+            else
+                result = parseFloat(num1) / parseFloat(num2);
             break;
     }
 
