@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="media/styles.css"/>
+        <script src="media/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="inputContainer">
+                <input type="Text" id="input1" class="inputField">
+                <select id="operation" class="operationField">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+                <input type="Text" id="input2" class="inputField">
+            </div>
+            <button class="equalButton" onClick="onButtonClick()">подсчитать</button>
+            <form class="outputContainer">
+                <textarea id="output2" class="outputField"  readonly></textarea>
+                <textarea id="output1" class="outputField" readonly></textarea>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+body
+{
+    background-color:lightgreen;
+}
+
+.inputField, .operationField, .equalButton, .outputField
+{
+    height: 30px;
+    margin: 6px 3px;
+    font-size: 12pt;
+    font-weight: bold;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color:crimson;
+    color: crimson;
+    background-color:lightgreen;
+    outline: none;
+}
+
+.inputField
+{
+    width: 200px;
+    padding: 1px 2px;
+}
+
+.operationField
+{
+    width: 40px;
+}
+
+.equalButton
+{
+    width: 120px;
+}
+
+.outputField
+{
+    width: 100%;
+    max-width: 400px;
+    min-height: 30px;
+    text-align: center;
+    border: none;
+    margin: auto;
+    resize: none;
+}
+
+.outputField#output2
+{
+    color: rgb(167, 129, 102)
+}
+
+.container
+{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.inputContainer
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.outputContainer
+{
+    width: 100%;
+    max-width: 450px;
+    margin: 6px 3px;
+    height: auto;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color:crimson;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) 
+{
+    .inputContainer
+    {
+        width: 200px;
+        max-width: 200px;
+        flex-direction: column;
+    }
+
+    .operationField
+    {
+        margin: 3px auto;
+    }
+
+    .outputField
+    {
+        margin: 0 auto;
+    }
+
+    .outputContainer
+    {
+        width: 100%;
+        max-width: 200px;
+    }
+}
