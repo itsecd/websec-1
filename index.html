@@ -2,25 +2,29 @@
     <head>
         <title>Calculator</title>
         <link rel="stylesheet" href="styles/style.css"/>
+        <script src="scripts/calculator.js"></script>
     </head>
 
     <body>
         <div class="calculator">
-            <div class="input-row">
-                <input type="text"></input>
-                <select>
+            <div class="row">
+                <input type="number" step="any" id="firstValue" required></input>
+                <select id="operation">
                     <option>+</option>
                     <option>-</option>
                     <option>*</option>
                     <option>/</option>
                 </select>
-                <input type="text"></input>
+                <input type="number" step="any" id="secondValue" required></input>
             </div>
-            <div class="submit-row">
-                <button class="submit-button">Подсчитать</button>
+            <div class="row">
+                <button onclick="calculate()" class="submit-button">подсчитать</button>
             </div>
-            <div class="result-row">
-                <textarea></textarea>
+            <div class="row">
+                <div class="output">
+                    <textarea rows="1" readonly id="outputOld" class="history"></textarea>
+                    <textarea rows="1" oninput="auto_grow(this)" readonly id="outputNew" class="current"></textarea>
+                </div>
             </div>
         </div>
     </body>
