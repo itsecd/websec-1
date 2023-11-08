@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="media/styles.css">
+    <script src="media/script.js"></script>
+</head>
+
+<body>
+    <h1>Калькулятор</h1>
+
+    <div class="inputsContainer clearfix">
+        <input type="text" id="number1" class="numberInput"/>
+
+        <select class="operationInput" id="operation">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+
+        <input type ="text" id="number2" class="numberInput"/>
+    </div>
+
+    <div class="buttonContainetr">
+        <button class="button" onclick="onClickHandler()">Подсчитать</button>
+    </div>
+
+    <div class="inputsContainer">
+        <textarea class="textareaInput" id="result"></textarea>
+    </div>
+</body>
+</html>
