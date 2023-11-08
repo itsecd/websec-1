@@ -10,25 +10,35 @@ function onClickHandler(){
     console.log(v1, v2, op, typeof v1, typeof v2);
 
     let result = null;
-    let resultInformation = v1 + " " + op + " " + v2 + " = " ;
-    if (op=='+'){
-        result= v1 + v2;
+    if(isNaN(v1) || isNaN(v2)){
+        let resultInformation=''
+        result='Считаю только цифры';
+        resultInformation +=result;
+        document.getElementById("result").value = results + "\n" + resultInformation;
+        results = resultInformation;
     }
-    if (op=='-'){
-        result= v1 - v2;
-    }
-    if (op=='*'){
-        result= v1 * v2;
-    }
-    if (op=='/'){
-        if(Math.abs(v2)<Number.EPSILON){
-            result='На ноль делить нельзя';
+    else{
+        let resultInformation = v1 + " " + op + " " + v2 + " = " ;
+        if (op=='+'){
+            result= v1 + v2;
         }
-        else{
-            result= v1 / v2;
+        if (op=='-'){
+            result= v1 - v2;
         }
+        if (op=='*'){
+            result= v1 * v2;
+        }
+        if (op=='/'){
+            if(Math.abs(v2)<Number.EPSILON){
+                result='На ноль делить нельзя';
+            }
+            else{
+                result= v1 / v2;
+            }
+        }
+        resultInformation +=result;
+        document.getElementById("result").value = results + "\n" + resultInformation;
+        results = resultInformation;
     }
-    resultInformation +=result;
-    document.getElementById("result").value = results + "\n" + resultInformation;
-    results = resultInformation;
+
 }

@@ -58,3 +58,5 @@
     color:#ed3f2f;
     font-weight:normal;
 }
+
+@media screen and (max-width: 600px) {}
