@@ -8,11 +8,10 @@
 <body>
     <h1>Калькулятор</h1>
 
-    <div class="inputsContainer clearfix">
+    <div class="inputsContainer" >
         <input type="text" id="number1" class="numberInput"/>
-
         <select class="operationInput" id="operation">
-            <option>+</option>
+            <option selected>+</option>
             <option>-</option>
             <option>*</option>
             <option>/</option>
@@ -21,12 +20,12 @@
         <input type ="text" id="number2" class="numberInput"/>
     </div>
 
-    <div class="buttonContainetr">
+    <div class="buttonContainer">
         <button class="button" onclick="onClickHandler()">Подсчитать</button>
     </div>
 
     <div class="inputsContainer">
-        <textarea class="textareaInput" id="result"></textarea>
+        <textarea rows="2" class="textareaInput" id="result"></textarea>
     </div>
 </body>
 </html>

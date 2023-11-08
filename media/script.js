@@ -1,3 +1,4 @@
+let results = "";
 function onClickHandler(){
     let v1=document.getElementById("number1").value;
     let v2=document.getElementById("number2").value;
@@ -9,6 +10,7 @@ function onClickHandler(){
     console.log(v1, v2, op, typeof v1, typeof v2);
 
     let result = null;
+    let resultInformation = v1 + " " + op + " " + v2 + " = " ;
     if (op=='+'){
         result= v1 + v2;
     }
@@ -26,5 +28,7 @@ function onClickHandler(){
             result= v1 / v2;
         }
     }
-    document.getElementById("result").value = result;
+    resultInformation +=result;
+    document.getElementById("result").value = results + "\n" + resultInformation;
+    results = resultInformation;
 }
