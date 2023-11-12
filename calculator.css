@@ -1,0 +1,115 @@
+.sharedinput{
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 12px;
+    font-size: 20px;
+    color: red;
+    height: 30px;
+    border: red dashed 2px;
+}
+.textinput {
+    flex-wrap: wrap;
+    width: 200px;
+    background-color:lightgreen;
+}
+
+.selectinput {
+    background-color:lightgreen;
+    width: 60px;
+}
+
+.buttonItem {
+    width: 200px;
+    height: 60px;
+}
+
+.textArea {
+    text-align: center;
+    font-size: 15px;
+    width: 600px;
+    height: 100px;
+}
+
+.background {
+    width: 650px;
+    display: flex;
+    border-radius: 5px;
+    background-color: lightgreen;
+    border-color: lightgreen;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.itemInRow {
+    float: left;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-container {
+    position: relative;
+    padding: 10px;
+}
+
+.history-container p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.history-container #history {
+    position: absolute;
+    top: 30px;
+    color: #999;
+    font-size: 12px;
+}
+
+.my-button {
+    margin-left: 243px;
+    width: 130px;
+    background-color: lightgreen;
+    height: 30px
+}
+
+@media (max-width: 650px) {
+    .my-button{
+        width: 20%;
+        margin-left: 135px;
+        font-size:10px;
+    }
+    .clearfix {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .textArea {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .background {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    input[type="text"], select, button {
+        width: 100%;
+    }
+
+    p.history-item {
+        font-size: 12px;
+    }
+
+    input[type="text"].textinput {
+        width: 50%;
+    }
+}
