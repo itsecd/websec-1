@@ -5,21 +5,26 @@ function buttonClick() {
 
     number1 = parseFloat(number1);
     number2 = parseFloat(number2);
+
+    let result_str = "";
+    let prev_result_str = document.getElementById("result").textContent;
+    console.log("Prev:", prev_result_str)
+
     if (isNaN(number1) || isNaN(number2)) {
         alert("Некорректные данные! Операция может быть выполнена только с числами.");
     }
     else {
-        let result;
+        let result_value;
         if (operation === "+") {
-            result = number1 + number2;
+            result_value = number1 + number2;
         }
 
         if (operation === "-") {
-            result = number1 - number2;
+            result_value = number1 - number2;
         }
 
         if (operation === "*") {
-            result = number1 * number2;
+            result_value = number1 * number2;
         }
 
         if (operation === "/") {
@@ -28,12 +33,14 @@ function buttonClick() {
                 return;
             }
             else {
-                result = number1 / number2;
+                result_value = number1 / number2;
             }
         }
-
-        document.getElementById("result").value = number1 + " " + operation + " " + number2 + " = " + result;
+        result_str = `${number1} ${operation} ${number2} = ${result_value}`;
+        // document.getElementById("result").value = number1 + " " + operation + " " + number2 + " = " + result;
+        document.querySelector('#result').innerHTML = result_str;
+        console.log("Prev2:", prev_result_str)
+        document.querySelector('#prev_result').innerHTML = prev_result_str;
+        console.log(`${number1} (${typeof number1}) ${operation} ${number2} (${typeof number2}) = ${result_value}`);
     }
-
-    console.log(`${number1} (${typeof number1}) ${operation} ${number2} (${typeof number2}) = ${result}`);
 }
