@@ -24,9 +24,16 @@ function calculate() {
             break;
     }
 
-    if (result === Infinity)
-        result = '\u221E'
+    console.log(result);
 
-    document.getElementById("outputNew").value = `${firstValue} ${operation} ${secondValue} = ${result}`; 
-    previousExpression = `${firstValue} ${operation} ${secondValue} = ${result}`;
+    if (isNaN(result)) {
+        document.getElementById("outputNew").value = "Некорректные данные";
+    }
+    else if (result === Infinity || result === -Infinity) {
+        document.getElementById("outputNew").value = "Некорректные данные. Возможно деление на ноль?";
+    }
+    else {
+        document.getElementById("outputNew").value = `${firstValue} ${operation} ${secondValue} = ${result}`; 
+        previousExpression = `${firstValue} ${operation} ${secondValue} = ${result}`;
+    }
 }

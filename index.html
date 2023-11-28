@@ -8,20 +8,20 @@
     <body>
         <div class="calculator">
             <div class="row">
-                <input type="number" step="any" id="firstValue" required></input>
-                <select id="operation">
+                <input class="general-style" type="number" step="any" id="firstValue" required></input>
+                <select class="general-style" id="operation">
                     <option>+</option>
                     <option>-</option>
                     <option>*</option>
                     <option>/</option>
                 </select>
-                <input type="number" step="any" id="secondValue" required></input>
+                <input class="general-style" type="number" step="any" id="secondValue" required></input>
             </div>
             <div class="row">
-                <button onclick="calculate()" class="submit-button">подсчитать</button>
+                <button class="general-style" onclick="calculate()" class="submit-button">подсчитать</button>
             </div>
             <div class="row">
-                <div class="output">
+                <div class="output general-style">
                     <textarea rows="1" readonly id="outputOld" class="history"></textarea>
                     <textarea rows="1" oninput="auto_grow(this)" readonly id="outputNew" class="current"></textarea>
                 </div>

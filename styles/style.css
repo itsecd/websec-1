@@ -1,3 +1,15 @@
+.general-style {
+    background-color: transparent;
+    border-radius: 10px;
+    border-width: 1;
+    border-style: dashed;
+    border-color: rgb(243,43,32);
+
+    color: red;
+    font-size: 17;
+    font-weight: bold;
+}
+
 .calculator {
     background-color: rgb(186,255,194);
     max-width: 540px;
@@ -5,8 +17,6 @@
 }
 
 .row {
-    background-color: transparent;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,19 +29,7 @@ input {
     height: 35;
     width: 40%;
     margin: 10px;
-
     padding:10px;
-    font-size:17;
-
-    color: red;
-    font-size: 17;
-    font-weight: bold;
-
-    background-color: inherit;
-    border-radius: 10px;
-    border-width: 1;
-    border-style: dashed;
-    border-color: rgb(243,43,32);
 }
 
 select {
@@ -39,15 +37,6 @@ select {
     width: 15%;
     height: 35;
     margin: 10px;
-
-    text-indent: 15%;
-    color: red;
-    font-size: 17;
-
-    background-color: inherit;
-    border-radius: 10px;
-    border-style: dashed;
-    border-color: rgb(243,43,32);
 }
 
 button {
@@ -57,17 +46,6 @@ button {
     padding-left:20px;
     padding-right: 20px;
     padding: 5px;
-
-    color: red;
-    font-size: 17;
-    font-weight:bold;
-    word-wrap: break-word;
-
-    background-color: transparent;
-    border-radius: 10px;
-    border-width: 1;
-    border-style: dashed;
-    border-color: rgb(243,43,32);
 }
 
 .output
@@ -75,12 +53,6 @@ button {
     width: 100%;
     margin:2%;
     padding: 10px;
-
-    background-color: transparent;
-    border-radius: 10px;
-    border-width: 1;
-    border-style: dashed;
-    border-color: rgb(243,43,32);
 }
 
 textarea {
