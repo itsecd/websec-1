@@ -2,8 +2,7 @@
     background-color: rgb(186, 255, 194);
     border-radius: 15px;
     max-width: 700px; 
-    /* min-width: min-content; */
-    width: 100%;
+    padding: 10px;
 }
 
 .container {
@@ -11,6 +10,10 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.left {
+    align-items: start;
 }
 
 .baseStyle {
@@ -41,12 +44,10 @@
 .verticalContainer {
     display: flex;
     flex-direction: column;
-    justify-content: start;
     min-height: 70px;
 }
 
 .results {
-    /* min-height: 10px; */
     margin: 5px;
 }
 
