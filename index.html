@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href ="styles.css">
+        <script type = "text/javascript" src = "script.js"></script>
+    </head>
+</html>
+
+<body class = "body color border">
+    <h1>Калькулятор</h1>
+    <div class="row centerAlign color">
+        <input type ="text" id="input1" class = "inputField color border" />
+        
+        <select id="select1" class = "selectField color border">
+            <option value ="plus">+</option>
+            <option value ="minus">-</option>
+            <option value ="multiply">*</option>
+            <option value ="division">/</option>
+        </select>
+        <input type ="text" id="input2" class = "inputField color border" required pattern="^[ 0-9]+$"/>
+    </div>
+
+    <button class ="row button color border" id = "button1" onClick="buttonClickHandler();">подсчитать</button>
+
+    <textarea class = "row resultArea centerAlign color border" id="results"></textarea>
+</body>

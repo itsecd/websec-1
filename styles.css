@@ -1,0 +1,42 @@
+
+.inputField {
+    margin: 10px auto 10px;
+}
+
+.selectField {
+ background-color: rgb(150, 217, 229);
+ border-width: 10px;
+ border-radius: 10%;
+}
+
+.button {
+    margin: 15px auto 15px auto;
+}
+
+.row {
+    display: block;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.resultArea {
+    width: 100%;
+}
+
+.color{
+    background-color: rgb(150, 229, 180);
+    color:rgb(223, 57, 24);
+}
+
+.border {
+    border-color:rgb(223, 57, 24);
+    border-width: 1px;
+    border-radius: 10%;
+    border-style:dashed;
+}
+
+.body {
+    border-color: rgb(150, 229, 180);
+}
