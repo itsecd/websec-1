@@ -1,0 +1,119 @@
+.textInput{
+    margin: 16px;
+    font-size: 20px;
+    width: 37%;
+    height: 40px;
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.allData{
+    border: red dashed 2px;
+    color:red;
+    background-color: rgb(186, 255, 194);
+    border-radius: 12px;
+}
+
+.textArea{
+    margin: 16px;
+    padding: 6px;
+}
+
+.invisArea{
+    border:none;
+    background-color: rgb(186, 255, 194);
+    width: 100%;
+    font-size: 20px;
+    height: 3%;
+    margin: 8px;
+    padding: 2px;
+    resize: none;
+}
+
+.background{
+    background-color: rgb(186, 255, 194);
+    margin: 24px;
+    width: 550px;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.itemInRow{
+    float: left;
+    margin: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 40px;
+}
+
+.boxForButton{
+    display: flex;
+    width: 600px;
+    height: 100px;
+    justify-content: center;
+
+}
+
+.buttonItem{
+    margin: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 550px){
+    .background{
+        width: 230px;
+        height:300px;
+    }
+    .clearfix::after{
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .textInput{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height:12%;
+        margin: 2px;
+    }
+    .itemInRow{
+        margin-left:33%;
+        width: 33%;
+        height: 12%;
+    }
+    .boxForButton{
+        width:100%;
+        height: 15%;
+    }
+    .buttonItem{
+        margin:2px;
+        height:80%;
+        width:70%;
+    }
+    .textArea{
+        margin: 2px;
+        padding: 10px;
+    }
+    .invisArea{
+        height: 10%;
+        margin:1px;
+    }
+}
