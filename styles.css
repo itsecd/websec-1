@@ -1,14 +1,14 @@
 .background_style {
     background-color: rgb(186,255,200);
-    border-radius: 7px;
+    border-radius: 10px;
     width: 500px;
-    height: 189px;
+    height: auto;
 }
 
 .block_style {
+    width: 96%;
     margin: 2%; 
     height: auto;
-    width: 98%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
 .input_style, .select_style, .button_style, .output_style {
     height: 100%;
     margin: 1%;
-    border-radius: 5px;
+    border-radius: 10px;
     border-width: 1.5px;
     border-style: dotted;
     border-color: red;
@@ -33,26 +33,26 @@
 }
 
 .input_style {
-    width: 30%;
+    width: 35%;
     padding: 6px;
 }
 
 .select_style {
-    width: 20%;
+    width: 15%;
     padding: 3px;
 }
 
 .button_style{
-    width: 25%;
+    width: 35%;
     padding: 6px;
 }
 
 .prev_res_output_style, .res_output_style { 
-    width: 98%;
-    height: 5%;
+    width: 95%;
+    height: auto;
     border-color: rgb(186,255,200);
     resize: none;
-    text-align: center;
+    text-align: left;
 }
 
 .prev_res_output_style {
@@ -60,7 +60,7 @@
 }
 
 .output_style {
-    width: 70%;
+    width: 95%;
 }
 
 @media screen and (max-width:550px){ 
@@ -71,7 +71,7 @@
     }
 
     .input_style {
-        width: 50%;
+        width: 60%;
     }
     
     .block_style {
