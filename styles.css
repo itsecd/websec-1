@@ -1,0 +1,80 @@
+.background_style {
+    background-color: rgb(186,255,200);
+    border-radius: 7px;
+    width: 500px;
+    height: 189px;
+}
+
+.block_style {
+    margin: 2%; 
+    height: auto;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(186,255,200);
+}
+
+.input_style, .select_style, .button_style, .output_style, .prev_res_output_style,  .res_output_style{
+    font-family: 'Verdana', Times, sans-serif; 
+    font-size: small; 
+    background-color: rgb(186,255,200);
+    color: red;
+}
+
+.input_style, .select_style, .button_style, .output_style {
+    height: 100%;
+    margin: 1%;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-style: dotted;
+    border-color: red;
+    font-weight: bold;
+}
+
+.input_style {
+    width: 30%;
+    padding: 6px;
+}
+
+.select_style {
+    width: 20%;
+    padding: 3px;
+}
+
+.button_style{
+    width: 25%;
+    padding: 6px;
+}
+
+.prev_res_output_style, .res_output_style { 
+    width: 98%;
+    height: 5%;
+    border-color: rgb(186,255,200);
+    resize: none;
+    text-align: center;
+}
+
+.prev_res_output_style {
+    opacity: 0.5;
+}
+
+.output_style {
+    width: 70%;
+}
+
+@media screen and (max-width:550px){ 
+    .background_style {
+        width: 100%;
+        min-width: 50px;
+        height: 260px;
+    }
+
+    .input_style {
+        width: 50%;
+    }
+    
+    .block_style {
+        flex-direction: column;
+    }
+ }

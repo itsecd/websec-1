@@ -1,30 +1,33 @@
 <!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>1st_lab_web</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>1st_lab_web</title>
-</head>
-
-<body>
-    <div>
-        <div>
-            <input type = "text" id = "first_value" class="input_style">
-            <select id = "operation" class = "select_style">
-                <option value="+" selected>+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-            </select>
-            <input type = "text" id = "second_value" class="input_style">
+    <body>
+        <div class="background_style">
+            <div class="block_style">
+                <input type = "text" id = "first_value" class="input_style">
+                <select id = "operation" class = "select_style">
+                    <option value="+" selected>+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type = "text" id = "second_value" class="input_style">
+            </div>
+            <div class="block_style">
+                <button onclick="OnClickHandler()" class = "button_style">Подсчитать</button>
+            </div>
+            <div class="block_style">
+                <div class="output_style">
+                    <textarea disabled class="prev_res_output_style" id="prev_result" readonly> </textarea>
+                    <textarea disabled class="res_output_style" id="result" readonly> </textarea>
+                </div>
+            </div>
         </div>
-        <div>
-            <button onclick="OnClickHandler()" class = "button_style">Подсчитать</button>
-        </div>
-        <div>
-            <textarea disabled class="prev_res_output_style" id="prev_result" readonly> </textarea>
-            <textarea disabled class="res_output_style" id="result" readonly> </textarea>
-        </div>
-    </div>
-</body>
+    </body>
 
 </html>
