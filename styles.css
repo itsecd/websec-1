@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(186, 255, 194);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto; 
+}
+
+.inputField,
+.operationField,
+.button {
+    width: 30%; 
+    max-width: 200px;
+    height: 40px;
+    background-color: rgb(186, 255, 194);
+    border: 2px dashed red;
+    margin: 3%;
+    font-size: 20pt;
+    border-radius: 10px;
+    color: red;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.resultField {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    background-color: rgb(186, 255, 194);
+    font-size: 16pt;
+    margin-top: 10px;
+    border: 2px dashed red;
+    border-radius: 10px;
+    color: red;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    margin: auto;
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .inputField,
+    .operationField,
+    .button {
+        width: 100%; 
+        margin: 3% 0; 
+    }
+}
