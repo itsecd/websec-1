@@ -1,4 +1,4 @@
-function onButtonClick(event){
+function onButtonClick() {
     let v1 = document.getElementById("number1").value;
     let v2 = document.getElementById("number2").value;
     let op = document.getElementById("operation").value;
@@ -17,21 +17,23 @@ function onButtonClick(event){
     }
 
     let result = null;
+    let operationSymbol = '';
 
-    if (op === "+"){
+    if (op === "+") {
         result = v1 + v2;
-    }
-    else if(op === "-"){
+        operationSymbol = '+';
+    } else if (op === "-") {
         result = v1 - v2;
-    }
-    else if(op === "*"){
+        operationSymbol = '-';
+    } else if (op === "*") {
         result = v1 * v2;
-    }
-    else if(op === "/"){
+        operationSymbol = '*';
+    } else if (op === "/") {
         result = v1 / v2;
+        operationSymbol = '/';
     }
 
-
-    document.getElementById("results").value = result;
+    let outputString = `${v1} ${operationSymbol} ${v2} = ${result}`;
+    document.getElementById("results").innerText = outputString;
     console.log(v1, v2, op, typeof v1, typeof v2);
 }
