@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href ="styles.css">
+        <script type = "text/javascript" src = "script.js"></script>
+    </head>
+</html>
+
+<body class = "body color border">
+    
+    <div class="row center color">
+    
+        <input type ="text" id="left" class = "input_field color border center" required />
+        
+        <select id="select" class = "select_field color border">
+
+            <option value ="sum">+</option>
+
+            <option value ="diff">-</option>
+
+            <option value ="mul">*</option>
+
+            <option value ="div">/</option>
+
+        </select>
+
+        <input type ="text" id="right" class = "input_field color border center" required />
+    
+    </div>
+
+    <button class ="row button color border" id="button" onClick="button_Click();">Подсчитать</button>
+
+    <textarea class = "row result center color border" id="results"></textarea>
+</body>
