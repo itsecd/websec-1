@@ -1,5 +1,6 @@
 .design
 {
+    height: 40px;
     background-color: aquamarine;
     margin: 3% auto;
     font-size: 15pt;
@@ -13,23 +14,19 @@
 .inputField 
 {
     width: 38%;
-    min-width: 150px;
-    height: 40px;
-    
+    min-width: 150px; 
 }
 
 .operationField 
 {
     width: 20%;
     min-width: 40px;
-    height: 40px;
 }
 
 .equalButton 
 {
     width: auto;
     min-width: auto;
-    height: 40px;
 }
 
 .inputContainer
