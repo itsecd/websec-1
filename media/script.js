@@ -43,7 +43,7 @@ function onButtonClick(event)
                     console.log(document.getElementById("output").value);
                     return;
                 }
-                result = v1 + v2;
+                result = v1 / v2;
                 break;
         }
     }

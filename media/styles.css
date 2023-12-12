@@ -7,6 +7,7 @@
     border-color: red;
     border-style: dashed;
     border-radius: 10px;
+    color: red;
 }
 
 .inputField 
@@ -14,8 +15,6 @@
     width: 38%;
     min-width: 150px;
     height: 40px;
-
-    color: red;
     
 }
 
@@ -24,8 +23,6 @@
     width: 20%;
     min-width: 40px;
     height: 40px;
-
-    color: red;
 }
 
 .equalButton 
@@ -33,8 +30,6 @@
     width: auto;
     min-width: auto;
     height: 40px;
-
-    color: red;
 }
 
 .inputContainer
@@ -77,8 +72,6 @@
     min-width: 150px;
     height: 40px;
     resize: none;
-    
-    color: red;
 }
 
 .outputContainer
