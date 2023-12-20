@@ -1,6 +1,8 @@
 
 function button_Click()
 {
+    let left_input = document.getElementById("left");
+    let right_input = document.getElementById("right");
     let left_value = left_input.value;
     let right_value = right_input.value;
     let operation = document.getElementById("select");
